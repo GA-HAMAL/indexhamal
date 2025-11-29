@@ -1,0 +1,1410 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="description" content="Podstawy dla początkujących.">
+<meta name="keywords" content="">
+<title>Zrozumieć FILTRY - HAMAL</title>
+<meta name="robots" content="index,follow">
+<link rel="shortcut icon" href="logo.ico">
+
+<style type="text/css">
+<!--
+body {
+	margin-left: 0px;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+	background-color: #2D303A;
+}
+.style1 {
+	color: #1A1B1D;
+	font-family: Verdana;
+	font-size: 14px;
+}
+.style-wyk-dzial {
+	color: #EEEEEE;
+	font-family: Verdana;
+	font-size: 14px;
+}
+.style-dzial {
+	color: #FFFFFF;
+	font-family: Arial;
+	font-size:22px;
+	letter-spacing:1.0pt;
+}
+.style-link {
+	color: #CFD1D6;
+	font-family: Verdana;
+	font-size: 14px;
+}
+.style-Hbr {
+	color: #2D303A;
+	font-family: Verdana;
+	font-size: 7px;
+}
+.style-br {
+	color: #858893;
+	font-family: Verdana;
+	font-size: 3px;
+}
+.style-arrow {
+	color: #1A1B1D;
+	font-family: Verdana;
+	font-size: 20px;
+}
+.style-prop {
+	color: #66FFFF;
+	font-family: Verdana;
+	font-size: 14px;
+	letter-spacing:3.0pt
+}
+.style-stopka {
+	color: #B3B6BD;
+	font-family: Arial;
+	font-size: 12px;
+	letter-spacing:4.0pt
+}
+
+a:link {
+	text-decoration: none;
+}
+a:visited {
+	text-decoration: none;
+}
+a:hover {
+	text-decoration: none;
+}
+a:active {
+	text-decoration: none;
+}
+-->
+</style>
+
+</head>
+<body>
+
+<table width="100%" border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td width="100%" height="130" align="center" bgcolor="#2D303A">
+<span style='font-size:32.0pt;font-family:"Book antiqua";color:#B3B6BD;letter-spacing:6.0pt'>Zrozumieć FILTRY</span><br>
+<span class="style-Hbr">.</span><br>
+<span style='font-size:26.0pt;font-family:"Book antiqua";color:#B3B6BD;letter-spacing:6.0pt'>Podstawy dla początkujących</span>
+</td>
+</tr>
+<tr><td width="100%" height="2" bgcolor="#FFD135"></td></tr>
+<tr><td width="100%" height="1" bgcolor="#000000"></td></tr>
+<tr>
+<td width="100%" align="center" bgcolor="#858893">
+ 
+<div align="center"><span class="style-link">12-02-2021</span></div>
+
+<table border="0" cellpadding="10" cellspacing="0">
+<tr>
+<td width="960" style="text-align: justify">
+<span class="style1">
+&nbsp; &nbsp; <strong> Wstęp </strong><br>
+<br>
+Jak działają filtry optyczne astronomiczne? Co się dzieje za ich przyczyną? Który filtr, jaki daje efekt...?<br>
+<br>
+Ktoś... kiedyś... zapytał, czy warto do filtra Ha (h-alpha) dodać filtr UHC, czy to coś poprawi, bo jak wiadomo, filtr UHC wycina szkodliwe LP (Light Polution - światła miasta).<br> Poniższe opracowanie ma na celu wyposażyć początkujących w wiedzę gwarantującą naturalną znajomość odpowiedzi na powyższe pytanie.<br>
+<span class="style-br">.</span><br>
+Nie będziemy zgłębiać fizyki zagadnienia, skupimy się jedynie na praktycznych aspektach tematu.<br>
+<span class="style-br">.</span><br>
+Wiedza w miarę możliwości będzie stopniowana w stosownej kolejności, powoli wtajemniczając Was w kolejne zagadnienia.<br>
+<br>
+<hr style="border: 0px; background: #FFFFFF; height: 3px;"><a name="WD"></a>
+Opracowanie podzieliłem na kilka działów, kliknij stosowną nazwę, aby zostać przeniesionym do interesującej Cię sekcji.<br>
+<br>
+<a href="#SWS" ><span class="style-wyk-dzial">&#10148; ŚWIATŁO - WIDMO ŚWIATŁA</span></a><br>
+<a href="#FEZF" ><span class="style-wyk-dzial">&#10148; FILTRY - EFEKT ZASTOSOWANIA FILTRÓW</span></a><br>
+<a href="#SF" ><span class="style-wyk-dzial">&#10148; SPRAWNOŚĆ FILTRÓW</span></a><br>
+<a href="#SFASM" ><span class="style-wyk-dzial">&#10148; SPRAWNOŚĆ FILTRA A SPRAWNOŚĆ MATRYCY</span></a><br>
+<a href="#nm" ><span class="style-wyk-dzial">&#10148; nm - CZYLI NANOMETRY</span></a><br>
+<a href="#SZF" ><span class="style-wyk-dzial">&#10148; SZEROKOŚĆ FILTRA</span></a><br>
+<a href="#371235" ><span class="style-wyk-dzial">&#10148; 3nm - 7nm - 12nm - 35nm | KTÓRY LEPSZY?</span></a><br>
+<a href="#SZ" ><span class="style-wyk-dzial">&#10148; STROMOŚĆ ZBOCZY - OBRAZ WIDMA</span></a><br>
+<a href="#PRF" ><span class="style-wyk-dzial">&#10148; PODSTAWOWE RODZAJE FILTRÓW</span></a><br>
+<a href="#KOIII" ><span class="style-wyk-dzial">&#10148; KOLOR PASMA OIII</span></a><br>
+<a href="#SBF" ><span class="style-wyk-dzial">&#10148; SAMODZIELNE BADANIE FILTRÓW</span></a><br>
+<a href="#RF" ><span class="style-wyk-dzial">&#10148; RODZAJE FILTRÓW Z UWAGI NA KONSTRUKCJĘ</span></a><br>
+<a href="#DFR" ><span class="style-wyk-dzial">&#10148; DŁUGOŚĆ FALI A ROZDZIELCZOŚĆ</span></a><br>
+<a href="#BST" ><span class="style-wyk-dzial">&#10148; BLUESHIFT</span></a><br>
+<br>
+<hr style="border: 0px; background: #FFFFFF; height: 3px;"><a name="SWS"></a>
+<br>
+
+
+
+
+
+<span class="style-dzial">&#10074; ŚWIATŁO - WIDMO ŚWIATŁA</span><br>
+<br>
+<br>
+Światło białe tak naprawdę składa się z widma barw podstawowych takich jak: fiolet - niebieski - zielony - żółty - pomarańczowy - czerwony. Z lewej strony widma, na lewo od fioletu, znajduje się ultrafiolet (UV - Ultraviolet), a z prawej strony widma, na prawo od czerwieni, znajduje się podczerwień (IR - Infrared). Dla ludzkiego oka dostępny jest zakres od fioletu do czerwieni, jednak dla kamer astrofotograficznych dostrzegalne są także ultrafiolet - UV, oraz podczerwień - IR.<br>
+Zadaniem stosowanych przez nas filtrów jest wyselekcjonowanie i przepuszczenie konkretnego wycinka widma światła.<br>
+Nadto, jak widzicie poniżej, oznaczyłem w widmie miejsce występowania dwóch kluczowych dla astrofotografii pasm, mianowicie, tlen - OIII (czyt. O3), oraz wodór - Ha (czyt. ha alfa).<br>
+<br>
+<div align="center"><img src="./images/Basics_Filtry/Basics_Filtry_00.png" border="0" alt=""></div>
+<br>
+<br>
+<br>
+Bez żadnej przeszkody po drodze (jak widać poniżej) do naszej matrycy/sensora kamerki dotrze pełne widmo światła, od UV, przez całe widmo widzialne, wraz z IR.<br>
+<br>
+<div align="center"><img src="./images/Basics_Filtry/Basics_Filtry_01.png" border="0" alt=""></div>
+<br>
+<br>
+<br>
+Dla uproszczenia w dalszej części opisu będziemy posługiwać się poniższym obrazkiem.<br>
+<br>
+<div align="center">BEZ FILTRA<br><img src="./images/Basics_Filtry/Basics_Filtry_02.png" border="0" alt=""></div><br>
+<br>
+<br>
+<a href="#WD" ><span class="style-link">WRÓĆ DO WYKAZU DZIAŁÓW &#10148;</span></a><br>
+<br>
+<br>
+<hr style="border: 0px; background: #FFFFFF; height: 3px;"><a name="FEZF"></a>
+<br>
+
+
+
+
+
+<span class="style-dzial">&#10074; FILTRY - EFEKT ZASTOSOWANIA FILTRÓW</span><br>
+<br>
+<br>
+Filtry są niczym zapory dla danych zakresów widma światła, aby wiedzieć, który zakres widma dany filtr nam zablokuje, a który przepuści, należy zapoznać się z opisem producenta. Bardzo dobre rozwiązanie przyjęła firma Baader, która na każdym opakowaniu filtra umieszcza obrazek pełnego widma światła, a nad nim przepuszczany przez dany filtr zakres widma.<br>
+Dla przykładu filtr czerwony 
+<a href="https://assets.baader-planetarium.com/media/extendware/ewimageopt/media/inline/3c/8/baader-r-ccd-filter-1-1-4--da8.jpg" target="_blank"><span class="style-link"><u>PUDEŁKO</u></span></a> -  
+<a href="https://assets.baader-planetarium.com/media/extendware/ewimageopt/media/inline/69/f/baader-r-ccd-filter-1-1-4--650.jpg" target="_blank"><span class="style-link"><u>WIDMO</u></span></a>
+<br>
+<br>
+<br>
+Najbardziej podstawowym filtrem i pewnie pierwszym, z jakim w astrofotografii się spotkacie, jest tzw. filtr L, czyli luminancji, lub też inaczej zwany UV-IR-cut, czyli filtr przepuszczający widmo widzialne, a wycinający promieniowanie ultrafioletowe (UV) i podczerwone (IR), gdyż te, jako takie, w astrofotografii kolorowej RGB i OSC są zbędne, a wręcz szkodliwe dla odwzorowania kolorów.<br>
+<br>
+Poniższy obrazek przedstawia sytuację, gdy zastosujemy filtr L UV-IR-cut.<br>
+Filtr dzięki swojej budowie z widma światła wyciął UV (na lewo) oraz IR (na prawo), do matrycy przechodzi widzialne spektrum światła, od fioletu, przez niebieski, turkus, zieleń, żółć, pomarańcz, po czerwień. Tak działa filtr L (IR-UV cut).<br>
+<br>
+<div align="center">L (IR-UV cut)<br><img src="./images/Basics_Filtry/Basics_Filtry_03.png" border="0" alt=""></div>
+<br>
+
+<br>
+Powyższy filtr nie znajduje zastosowania w obserwacjach wizualnych, z uwagi na fakt, iż oko ludzkie nie jest czułe ani na UV, ani na IR, więc to, co on wycina, w obserwacjach wizualnych nie ma wpływu na obserwowany obraz. Stosujemy go w astrofotografii.<br>
+<br>
+<br>
+Innym popularnym filtrem w astronomii, już także obserwacyjnej, jest filtr wycinający LP (Light Pollution - światła miast, lamp ulicznych itp.) Szczęśliwie się składa, że istnieje pewien konkretny rejon widma światła, w którym skupia się sporo zanieczyszczenia światłem miejskim, a przy tym, nie jest on kluczowy dla fotografowanych pasm. Filtr taki, u jednych producentów nazywa się UHC, u innych CLS lub jeszcze inaczej, tak czy inaczej jego zadaniem jest wyciąć zakres widma światła, w którym skupia się najwięcej szkodliwego zakresu światła (oznaczony na biało sektor LP). Zauważcie, że filtr ten wyciął LP, ale pozostawił obszary z bezcennymi pasmami, czyli OIII, oraz Ha, takie jego zadanie. Przy okazji wyciął też UV i IR, abyśmy nie musieli do niego dodawać filtra L UV-IR-cut.<br>
+<br>
+<div align="center">UHC<br><img src="./images/Basics_Filtry/Basics_Filtry_04.png" border="0" alt=""></div>
+<br>
+<br>
+<br>
+<br>
+Skoro już o pasmach OIII i Ha mowa, dla przykładu sprawdźmy, co z naszego pełnego widma światła przepuści wąskopasmowy filtr OIII.<br>
+<br>
+<div align="center">O III<br><img src="./images/Basics_Filtry/Basics_Filtry_05.png" border="0" alt=""></div>
+<br>
+Jak widzimy, filtr OIII przepuścił nam bardzo wąski zakres widma wraz z pasmem OIII.
+<br>
+<br>
+<br>
+Dla odmiany sprawdźmy wąskopasmowy filtr Ha.<br>
+<br>
+<div align="center">Ha<br><img src="./images/Basics_Filtry/Basics_Filtry_06.png" border="0" alt=""></div>
+<br>
+Jak widzimy, filtr Ha przepuścił nam bardzo wąski zakres widma wraz z pasmem Ha.
+<br>
+<br>
+<br>
+Wróćmy zatem do postawionego na wstępie pytania, czy warto do filtra Ha dołożyć filtr UHC, czy to coś poprawi, bo jak wiadomo, filtr UHC wycina szkodliwe LP (Light Polution - światła miasta)<br>
+<br>
+Przeprowadźmy więc taką wizualizację, prezentując filtr Ha i dodany do niego filtr UHC.<br>
+<br>
+<div align="center">Ha + UHC<br><img src="./images/Basics_Filtry/Basics_Filtry_07.png" border="0" alt=""></div>
+<br>
+Co powiecie? Czy filtr UHC wnosi coś nowego do układu? Patrz poniżej.<br>
+<br>
+Przez szerokie wrota filtra UHC w obrębie czerwieni (1) przechodzi w pierwotnej formie, przycięta przez wąskopasmowy filtr Ha (2) wąska stróżka Ha, a przepustowość filtra UHC w obrębie zieleni i niebieskiego (3) nudzi się bezczynnie, nie mając czego filtrować, gdyż po wąskopasmowym filtrze Ha, tam po prostu już nic nie zostało, gdyż on nic nie przepuścił. Podobnie ma się sytuacja z LP, gdyż filtry wąskopasmowe typu Ha, OIII, SII, wycinają znaczną większość widma światła, w tym także LP, więc zapora w filtrze UHC (4), po tym, co dokonał filtr Ha, stoi bezczynnie.<br>
+<span class="style-br">.</span><br>
+Podsumowując, odpowiadając na postawione pytanie, stwierdzamy, iż nie ma sensu do filtra Ha dokładać filtra UHC, gdyż ten nic nowego nam nie wniesie.<br>
+<br>
+<div align="center">Ha + UHC<br><img src="./images/Basics_Filtry/Basics_Filtry_08.png" border="0" alt=""></div>
+<br>
+<br>
+Dla odmiany przeprowadźmy odwrotną próbę, mając już zamontowany w teleskopie filrt UHC, dodajny do niego filtr Ha.<br>
+Jak widzimy, filtr Ha zmodyfikował to, co przepuścił filtr UHC, blokując pasmo OIII wraz z otoczeniem (1), oraz zawężając nam widmo w obrębie Ha (2).<br>
+<br>
+<div align="center">UHC + Ha<br><img src="./images/Basics_Filtry/Basics_Filtry_09.png" border="0" alt=""></div>
+<br>
+<br><a name="vx-BG-OIII"></a>
+<br>
+Innym etapem wtajemniczenia, w zakresie przycinania pasma przez filtry, jest uzyskanie pożądanej części wspólnej. Zaraz zobaczycie, o co chodzi :)<br>
+<br>
+Jest sobie niebieski filtr Baader, tzw. B (od Blue), w zestawu RGB.<br>
+<br>
+<div align="center">B<br><img src="./images/Basics_Filtry/Basics_Filtry_10.png" border="0" alt=""></div>
+<br>
+<br>
+<br>
+Jest sobie zielony filtr Baader, tzw. G (od Green), z zestawu RGB.<br>
+<br>
+<div align="center">G<br><img src="./images/Basics_Filtry/Basics_Filtry_11.png" border="0" alt=""></div>
+<br>
+<br>
+<br>
+A teraz zobaczmy, co się stanie, gdy połączymy oba te filtry ze sobą.<br>
+<br>
+<div align="center">B + G<br><img src="./images/Basics_Filtry/Basics_Filtry_12.png" border="0" alt=""></div>
+<br>
+<br>
+Filtr B przyciął widmo zgodnie ze swoją charakterystyką, ustalając skrajne położenie części wspólnej z prawej strony, filtr G dociął widmo z lewej strony, w ten sposób drożna pozostała jedynie ich część wspólna, i faktycznie, zgodnie z deklaracją producenta, z połączenia filtrów B i G, powstał nam filtr OIII.<br>
+<br>
+<div align="center">B + G<br><img src="./images/Basics_Filtry/Basics_Filtry_12x.png" border="0" alt=""></div>
+<br>
+<br>
+Dla porównania umieściłem poniżej klasyczny filtr wąskopasmowy OIII, efekt końcowy praktycznie ten sam, można więc posiadając filtry G i B, z powodzeniem symulować i stosować filtr Narrowband OIII.<br>
+<br>
+<div align="center">OIII<br><img src="./images/Basics_Filtry/Basics_Filtry_05.png" border="0" alt=""></div>
+<br>
+<br>
+<br>
+W podobny sposób utworzyłem mój nietypowy filtr F550M, patrz <a href="Spectrum.html#vx-F550M" target="_blank"><span class="style-link"><u>TUTAJ</u></span></a><br>
+<br>
+<br>
+Skoro można łączyć filtry ze sobą, to może się uda, dodać do siebie ich zakresy pracy?<br>
+<br>
+Idąc tym tropem...zapanowała obecnie moda na Dual-band Filter, który jest połączeniem wąskopasmowego filtra Ha i OIII...<br>
+<br>
+<div align="center">Dual-band Filter OIII i Ha<br><img src="./images/Basics_Filtry/Basics_Filtry_06-5a.png" border="0" alt=""></div>
+<br>
+...zachodzi więc pokusa oszczędzenia pieniędzy i połączenia samodzielnie posiadanych dwóch filtrów Ha oraz OIII w jeden, aby uzyskać ten sam efekt :D<br>
+<br>
+Co wyniknie z takiej fuzji? Zobaczmy :). Do wąskopasmowego filtra OIII dodajmy wąskopasmowy filtr Ha.<br>
+<span class="style-br">.</span><br>
+<div align="center">OIII + Ha<br><img src="./images/Basics_Filtry/Basics_Filtry_06-5b.png" border="0" alt=""></div>
+<br>
+Niestety, do matrycy kamerki nic nie dociera. Filtr OIII przepuścił jedynie wąską stróżkę widma w okolicy OIII, jednak gdy trafiła ona na filtr Ha, zostaje w całości zablokowana.<br>
+<br>
+A może trzeba spróbować odwrotnie? Do filtra Ha dodajmy filtr OIII.<br>
+<br>
+<div align="center">Ha + OIII<br><img src="./images/Basics_Filtry/Basics_Filtry_06-5c.png" border="0" alt=""></div>
+<br>
+Nadal nic. Jak widzimy, natura filtrów jest taka, że łącząc ze sobą kolejne, można jedynie przycinać jeszcze bardziej widmo, natomiast łączyć przepuszczanych pasm, takich, które nie posiadają części wspólnej, się nie da. <br>
+<br>
+Można natomiast za pomocą filtra Dual-band i filtrów B lub G odseparować samo OIII, blokując Ha.<br>
+<span class="style-br">.</span><br>
+<div align="center">Dual-band Filter (OIII i Ha) + B<br><img src="./images/Basics_Filtry/Basics_Filtry_06-5d.png" border="0" alt=""></div>
+<br>
+<div align="center">Dual-band Filter (OIII i Ha) + G<br><img src="./images/Basics_Filtry/Basics_Filtry_06-5e.png" border="0" alt=""></div>
+<br>
+Lub za pomocą filtra R oseparować samo Ha, blokując OIII.<br>
+<span class="style-br">.</span><br>
+<div align="center">Dual-band Filter (OIII i Ha) + R<br><img src="./images/Basics_Filtry/Basics_Filtry_06-5f.png" border="0" alt=""></div>
+<br>
+<br>
+<hr>
+<br>
+<br>
+Filtry powyżej rysowane są w sposób umowny i aby mieć pewność, że rozumiecie naturę prezentowanych tu grafik, przedstawiam poniższe zestawienie. Wszystkie pokazują dokładnie to samo, ale na trzy różne sposoby.<br>
+<br>
+Filtr czerwony - <b>umownie</b><br>
+<br>
+<div align="center">R<br><img src="./images/Basics_Filtry/Basics_Filtry_13.png" border="0" alt=""></div>
+<br>
+<br>
+Filtr czerwony - <b>umownie</b><br>
+<br>
+<div align="center">R<br><img src="./images/Basics_Filtry/Basics_Filtry_14.png" border="0" alt=""></div>
+<br>
+<br>
+<br>
+Filtr czerwony - <b>w rzeczywistości</b><br>
+<br>
+<div align="center">R<br><img src="./images/Basics_Filtry/Basics_Filtry_15.png" border="0" alt=""></div>
+<br>
+<br>
+<a href="#WD" ><span class="style-link">WRÓĆ DO WYKAZU DZIAŁÓW &#10148;</span></a><br>
+<br>
+<br>
+<hr style="border: 0px; background: #FFFFFF; height: 3px;"><a name="SF"></a>
+<br>
+
+
+
+
+
+<span class="style-dzial">&#10074; SPRAWNOŚĆ FILTRÓW</span><br>
+<br>
+<br>
+Aby nie było tak łatwo, istnieje jednak pewna zawiłość. :) To nie jest tak, że gdy dany zakres widma trafia w filtrze na brak blokady, to przechodzi dalej nienaruszony, niestety, filtr wykonując swoją pracę, marnuje część przepuszczanego widma. Tylko brak filtra daje nam sprawność 100%, każdy filtr jakiś procent przepuszczanego pasma marnuje. Jedne filtry posiadają sprawność na poziomie 98%, czyli marnują jedynie 2% docierającego do nich światła, a 98% przepuszczają dalej, inne mają sprawność 80%, czyli marnują 20% docierającego do nich światła, a 80% przepuszczają dalej.<br>
+<br>
+Dla przykładu weźmy filtr o sprawności 70%, czyli taki, który przepuszcza 70% danego zakresu światła, a 30% marnuje. Nakręćmy przed kamerką <b>trzy</b> takie filtry, jeden na drugi. Co się stanie? Pierwszy zmarnuje nam 30% docierającego światła, przepuści 70%, kolejny z tych 70% zmarnuje nam kolejne 30% i przepuści 70%, czyli wynikowo już tylko 50%, kolejny zmarnuje kolejne 30% z naszych 50% i przepuści 70%, czyli do sensora ostatecznie dotrze jedynie 35% pierwotnego światła.<br>
+<br>
+<div align="center">L + L + L<br><img src="./images/Basics_Filtry/Basics_Filtry_16.png" border="0" alt=""></div>
+<br>
+<br>
+Wróćmy ponownie do przykładu odnośnie zastosowania razem filtrów UHC i Ha.<br>
+<br> 
+Patrz poniżej. To nie jest tak, jak w uproszczeniu ustaliliśmy kilka akapitów wyżej, że filtr UHC, dodany do filtra Ha, nic nie wnosi, no bo w kontekście przycinania zakresu pasma, to faktycznie nie wnosi on nic, ale... już w kontekście sprawności układu optycznego, ma swój udział (grafika poniżej). Trochę wiązki światła zmarnuje nam filtr wąskopasmowy Ha (1), trochę zmarnuje filtr UHC (2) i do matrycy dotrze mniej, niż gdyby filtra UHC tam nie było.<br>
+<br>
+<div align="center">Ha + UHC<br><img src="./images/Basics_Filtry/Basics_Filtry_17.png" border="0" alt=""></div>
+<br>
+<br>
+<br>
+Sprawność filtrów producenci prezentują za pomocą wykresów. Poniżej przykładowy wykres dla filtra UHC. Na lewo jest skala sprawności.<br>
+<br>
+Poniższy wykres oznacza, że filtr UHC przepuszcza pewien zakres widma w okolicach OIII, oraz w okolicach Ha, i czyni to ze sprawnością 90%.<br>
+<span class="style-br">.</span><br>
+<div align="center"><img src="./images/Basics_Filtry/Basics_Filtry_20.png" border="0" alt=""></div>
+<br>
+<br>
+Lub dla przykładu (poniżej) weźmy filtr wąskopasmowy Ha.<br>
+<br>
+Poniższy wykres oznacza, że filtr Ha przepuszcza pewien zakres widma w okolicach Ha, i czyni to ze sprawnością 90%.<br>
+<span class="style-br">.</span><br>
+<div align="center"><img src="./images/Basics_Filtry/Basics_Filtry_21.png" border="0" alt=""></div>
+<br>
+<br>
+<br>
+Dla innego sposobu zobrazowania zagadnienia, jak sprawność poszczególnych filtrów wpływa na wynik końcowy zastosujemy poniższy schemat. Nie każdy musi widzieć procenty :)<br>
+<br>
+Z widma wypływa pionowo 10 rzędów kresek symbolizujących 10 fotonów jako 100%, czyli jedna kreska na każde 10%.<br>
+<br>
+<div align="center"><img src="./images/Basics_Filtry/Basics_Filtry_22.png" border="0" alt=""></div>
+<br>
+<br>
+Podepnijmy do układu filtr UHC. Jak widzimy, gdzie filtr miał wyciąć widmo, to wyciął, gdzie filtr miał przepuścić widmo, to przepuścił, tylko... że posiadając sprawność 90%, przepuścił po 9 fotonów z 10, po 1 z 10 zmarnował.<br>
+<br>
+<div align="center"><img src="./images/Basics_Filtry/Basics_Filtry_23.png" border="0" alt=""></div>
+<br>
+<br>
+Dopnijmy dodatkowo do filtra UHC, filtr Ha, jak widzimy poniżej, filtr Ha gdzie miał dociąć zakres, to dociął, a gdzie miał przepuścić zakres, tam przepuścił, tylko że posiadając sprawność 90%, z przepuszczonych przez UHC 9 na 10 fotonów, przepuścił po 8 z 9 fotonów, czyli po 1 z 9 zmarnował.<br>
+Więc ostatecznie z 10 fotonów widma, do matrycy dotarło nam 8. Wniosek? Nie warto instalować zbędnych szkiełek w torze optycznym.<br>
+<br>
+<div align="center"><img src="./images/Basics_Filtry/Basics_Filtry_24.png" border="0" alt=""></div>
+<br>
+<br>
+<a href="#WD" ><span class="style-link">WRÓĆ DO WYKAZU DZIAŁÓW &#10148;</span></a><br>
+<br>
+<br>
+<hr style="border: 0px; background: #FFFFFF; height: 3px;"><a name="SFASM"></a>
+<br>
+
+
+
+
+
+<span class="style-dzial">&#10074; SPRAWNOŚĆ FILTRA A SPRAWNOŚĆ MATRYCY</span><br>
+<br>
+<br>
+Kolejną kwestią jest sprawność filtra w odniesieniu do sprawności matrycy.<br>
+<br>
+Mam filtr Ha o sprawności 90%! Będę więc łapał 9 fotonów z 10 :D Chciałbyś :P<br>
+<br>
+Projektując cyfrową matrycę fotograficzną, producent musi zdecydować, z którego pierwiastka będzie wytworzony element światłoczuły, ponieważ różne technologie wykonania, dają produkt czuły na różne długości fali. Inną technologię musimy zastosować, gdy potrzebujemy matryc naukowych, czułych na podczerwień lub ultrafiolet, inną, gdy chcemy uzyskać produkt dla klasycznej fotografii dziennej. Dodatkowo dany zakres czułości matrycy nie wynosi 100% w całym zakresie, lecz jego charakterystyka przebiega płynnie, rosnąc od któregoś momentu, aby osiągnąć czułość maksymalną i zacząć opadać, by osiągnąć zero. Tyle w ramach wyjaśnień wstępnych :)<br>
+<br>
+No więc... jest sobie matryca o poniższej charakterystyce czułości...<br>
+<span class="style-br">.</span><br>
+<div align="center"><img src="./images/Basics_Filtry/Basics_Filtry_30.png" border="0" alt=""></div><br>
+<br>
+...oraz jakiś filtr o poniższej charakterystyce sprawności...<br>
+<span class="style-br">.</span><br>
+<div align="center"><img src="./images/Basics_Filtry/Basics_Filtry_31.png" border="0" alt=""></div><br>
+<br>
+...wtedy, przy zastosowaniu tegoż filtra i tejże matrycy, wynikowa sprawność układu matryca + filtr, nie będzie stanowiła części wspólnej charakterystyk, jak to narysowałem poniżej...<br>
+<span class="style-br">.</span><br>
+<div align="center"><img src="./images/Basics_Filtry/Basics_Filtry_32.png" border="0" alt=""></div><br>
+<br>
+...lecz będzie wynikiem wypadkowej ich sprawności w danych zakresach.<br>
+<span class="style-br">.</span><br>
+<div align="center"><img src="./images/Basics_Filtry/Basics_Filtry_33.png" border="0" alt=""></div><br>
+<br>
+Powyższy obrazek ma charakter poglądowy, precyzyjne wyznaczenie sprawności wymaga badania każdej długości fali dla obu charakterystyk sprawności<br>
+<br>
+<br>
+Dla przykładu (poniżej), przy sprawności filtra 80% (1) i sprawności matrycy 70% (2) wynikowa sprawność układu wynosi 56% (3), gdyż... 70% z 80% wynosi 56%.<br>
+<span class="style-br">.</span><br>
+<div align="center"><img src="./images/Basics_Filtry/Basics_Filtry_34.png" border="0" alt=""></div><br>
+<br>
+Wracając więc do naszego przykładu z filtrem Ha o sprawności 90%...<br>
+<span class="style-br">.</span><br>
+<div align="center"><img src="./images/Basics_Filtry/Basics_Filtry_35.png" border="0" alt=""></div><br>
+<br>
+...przypasujmy go więc do naszej matrycy. Wynik nie będzie wyglądał tak jak poniżej...<br>
+<span class="style-br">.</span><br>
+<div align="center"><img src="./images/Basics_Filtry/Basics_Filtry_36.png" border="0" alt=""></div><br>
+<br>
+...ani nawet tak...<br>
+<span class="style-br">.</span><br>
+<div align="center"><img src="./images/Basics_Filtry/Basics_Filtry_37.png" border="0" alt=""></div><br>
+<br>
+...lecz niestety tak. Ostateczny wynik sprawności filtra i matrycy w paśmie Ha, będzie wynikową 90% sprawności naszego filtra i 53% sprawności matrycy, dając nam ostatecznie 48% sprawności układu, gdyż 90% z 53% wynosi 48%.<br>
+<span class="style-br">.</span><br>
+<div align="center"><img src="./images/Basics_Filtry/Basics_Filtry_38.png" border="0" alt=""></div><br>
+<br>
+Czyli... sprawność filtrów, sprawnością filtrów, ale... wiele jeszcze zależy od sprawności matrycy dla danego zakresu.<br>
+<br>
+<br>
+<a href="#WD" ><span class="style-link">WRÓĆ DO WYKAZU DZIAŁÓW &#10148;</span></a><br>
+<br>
+<br>
+<hr style="border: 0px; background: #FFFFFF; height: 3px;"><a name="nm"></a>
+<br>
+
+
+
+
+
+<span class="style-dzial">&#10074; nm - czyli nanometry</span><br>
+<br>
+<br>
+Są decy-metry 1/10 metra, centy-metry 1/100 metra, mili-metry 1/1000 metra, mikro-metry 1/10 000 metra, no i nasze <b>nano-metry</b> 1/100 000 metra.<br>
+<br>
+Nie musicie pamiętać tego, jaką częścią metra jest rzeczone nano, ale zapamiętajcie, że to są nanometry (nm), bo mając styczność z filtrami, niesposobna nie posługiwać się tą wartością.<br>
+<br>
+Widmo światła, jak każde poznane przez ludzkość medium, także otrzymało własną miarkę, a jej wartość jest zależna od długości fali. Dla przykładu fiolet to 400nm, cyan jako miejsce styku niebieskiego i zielonego to 500nm, dalej w prawo pomarańczowy to 600nm, głęboka czerwień to 700nm. Poniżej 400nm powoli zaczyna się UV (ultrafiolet), a powyżej 700nm zaczyna się IR (podczerwień), a dokładniej to NIR (ang. near infrared) bliska podczerwień, ta właściwa podczerwień, wg. naukowców zaczyna się trochę dalej.<br>
+<br>
+Jak widzicie, analizując widmo światła pod kątem długości fali, fajnym punktem odniesienia jest dla nas OIII, bo posiada w uproszczeniu wartość 500nm, dla odmiany Ha to już 656nm, warto te dwie wartości zapamiętać, gdyż są najpopularniejsze i stanowią fundament astrofotografii. Są jeszcze SII 670nm, H beta 486nm, NII 658nm.<br>
+<br>
+<div align="center"><img src="./images/Basics_Filtry/Basics_Filtry_40.png" border="0" alt=""></div>
+<br>
+<br>
+Do czego nam się to przyda?<br>
+<br>
+Mamy poniżej dwa różne filtry, dzięki znajomości zakresu ich pracy, bez obrazków, możemy opisać komuś ich szerokość.<br>
+<br>
+Pierwszy, poniższy filtr, pracuje w obrębie od 480nm do 690nm.<br>
+<span class="style-br">.</span><br>
+<div align="center"><img src="./images/Basics_Filtry/Types_of_filters_03.png" border="0" alt=""></div>
+<br>
+<br>
+<br>
+Drugi filtr działa w zakresie od 540nm do 600nm. Znając te parametry, potrafimy bez grafiki opisać komuś charakterystykę danego filtra.<br>
+<span class="style-br">.</span><br>
+<div align="center"><img src="./images/Basics_Filtry/Types_of_filters_04.png" border="0" alt=""></div>
+<br>
+<br>
+<a href="#WD" ><span class="style-link">WRÓĆ DO WYKAZU DZIAŁÓW &#10148;</span></a><br>
+<br>
+<br>
+<hr style="border: 0px; background: #FFFFFF; height: 3px;"><a name="SZF"></a>
+<br>
+
+
+
+
+
+<span class="style-dzial">&#10074; SZEROKOŚĆ FILTRA</span><br>
+<br>
+<br>
+Szerokość danego filtra nie mierzymy linijką i nie podajemy w milimetrach, bo nie chodzi tu o fizyczny wymiar szkiełka :)<br>
+Szerokość filtra podajemy w poznanych przed chwilą nanometrach i ma ona związek z obsługiwanymi długościami fali światła przez dany filtr.<br>
+<br>
+Co oznacza filtr OIII <b>8nm</b> lub filtr Ha <b>7nm</b> ?<br>
+<br>
+Oznacza to tyle, że producent filtra chcąc stworzyć filtr OIII postanowił przepuścić fragment widma z tym pasmem o łącznej szerokości 8nm, czyli od 495nm do 503nm, co daje łącznie przedział 8nm.<br>
+<span class="style-br">.</span><br>
+<div align="center">
+<picture>
+  <source media="(max-width: 1080px)" srcset="./images/Basics_Filtry/Basics_Filtry_50-xl.png">
+  <img src="./images/Basics_Filtry/Basics_Filtry_50.png" alt="Astrofotografia">
+</picture>
+</div>
+<br>
+<br>
+Natomiast filtr <b>Ha 7nm</b> posiadający szerokość 7nm pracuje w przedziale np. od 653nm do 660nm.<br>
+<span class="style-br">.</span><br>
+<div align="center">
+<picture>
+  <source media="(max-width: 1080px)" srcset="./images/Basics_Filtry/Basics_Filtry_51-xl.png">
+  <img src="./images/Basics_Filtry/Basics_Filtry_51.png" alt="Astrofotografia">
+</picture>
+</div>
+<br>
+<br>
+<a href="#WD" ><span class="style-link">WRÓĆ DO WYKAZU DZIAŁÓW &#10148;</span></a><br>
+<br>
+<br>
+<hr style="border: 0px; background: #FFFFFF; height: 3px;"><a name="371235"></a>
+<br>
+
+
+
+
+
+
+<span class="style-dzial">&#10074; 3nm - 7nm - 12nm - 35nm | Który filtr lepszy ?</span><br>
+<br>
+<br>
+Ktoś kiedyś rzekł: "Weź filtr Ha 12nm, on Ci przepuści więcej Ha",<br>
+<br>
+Miał rację?<br>
+<br>
+A no nie miał, zaraz wyjaśnię dlaczego :)<br>
+<br>
+Pasma same w sobie są bardzo wąskie, są symbolicznie prezentowane przez pionowe ciemniejsze kreski na grafice poniżej, a całe ich otoczenie (oznaczone białymi strzałkami), szersze lub węższe zależnie od szerokości filtra, to jedynie tło nieba i światło gwiazd. Im szerszy filtr, tym więcej razem z danym pasmem przedostaje się nam tła nieba i światła gwiazd, więc tło zdjęcia będzie jaśniejsze, a gwiazdy mocniej wypalone. Niezależnie, czy to będzie filtr 3nm, czy 35nm, czystego obrazu mgławicy składającego się z wodoru dotrze do matrycy tyle samo.<br>
+Odnosząc się więc do postawionej tezy, o tym, że szerszy filtr przepuści nam więcej Ha, jak sami widzicie, więcej Ha nie przepuści, za to przepuści więcej wszystkiego dookoła pasma.<br>
+<br>
+<div align="center"><img src="./images/Basics_Filtry/Ha-3-7-12-35.png" border="0" alt=""></div><br>
+<br>
+Skoro niezależnie od szerokości, każdy z tych filtrów przepuści tyle samo pasma Ha, to dlaczego węższe filtry są uznawane za lepsze?<br>
+Fotografując mgławice, chcemy uzyskać jak najwięcej czystego obrazu mgławicy, wycinamy więc jak najmocniej tło nieba, aby nie zaświetlało słabych rejonów mgławicy i pozbywamy się gwiazd, aby nie walczyły o uwagę z obiektem. Więc im mniej światła przemyka w filtrze po bookach fotografowanego pasma, tym korzystniej dla nas.<br>
+<br>
+Tak się zagadnienie objawia w rzeczywistości :)<br>
+<span class="style-br">.</span><br>
+<div align="center"><img src="./images/Basics_Filtry/M27-Ha-anim.gif" border="0" alt=""></div><br>
+<br>
+Jednak w szaleństwie pogoni za coraz węższymi filtrami istnieje pewna granica, po której przekroczeniu, światła docierającego do matrycy kamerki będzie tak mało, że praktycznie nic nie widząc w kadrze, będziemy mieli problem z ustawieniem ostrości. Przecież istnieje filtr słoneczny Ha Etalon 0.05nm, użyjmy go do astrofotografii DS :D<br>
+
+<br>
+Skoro mowa o filtrze do obserwacji Słońca Coronado Filters Double Stacking Etalon (poniżej) o szerokości połówkowej 0.05nm., zobaczcie, jak się ma wspomniany wcześniej wąski filtr Ha 3nm, do Ha 0.05nm.<br>
+<br>
+Poniżej 3nm i rzeczony Etalon 0.05nm.<br>
+<span class="style-br">.</span><br>
+<div align="center"><img src="./images/Basics_Filtry/Ha-3-Etalon.png" border="0" alt=""></div><br>
+<br>
+<br>
+<a href="#WD" ><span class="style-link">WRÓĆ DO WYKAZU DZIAŁÓW &#10148;</span></a><br>
+<br>
+<br>
+<hr style="border: 0px; background: #FFFFFF; height: 3px;"><a name="SZ"></a>
+<br>
+
+
+
+
+
+<span class="style-dzial">&#10074; STROMOŚĆ ZBOCZY - OBRAZ WIDMA</span><br>
+<br>
+<br>
+Szerokość filtra, szerokością, ale aby było jeszcze trudniej, jest jeszcze jeden aspekt, który należy znać, a mianowicie tzw. stromość zbocza. Oznacza ona tyle, że filtry nie tną widma idealnie pionowo jak nóż, od pewnej wartości do pewnej wartości, jak to dotąd w uproszczony sposób rysowaliśmy, one wchodzą na daną wartość stopniowo, i równie stopniowo z niej schodzą.<br>
+<br>
+Tu trzeba odnotować, że dwa podstawowe typy filtrów, czyli tzw. Wratten i Interferencyjne, mocno różnią się od siebie pod względem charakterystyki wycinania widma, zaraz się przekonacie, co mam na myśli.<br>
+<br>
+Wratten - to kolorowe szkiełko, które wygląda jak kolorowe szkiełko, i tym, że jest kolorowym szkiełkiem, pracuje na swoją przepuszczalność widma. Na zakres przepuszczanego widma wchodzi powoli, leniwie, aby potem powoli, leniwie z niego zejść.<br>
+<br>
+Filtr interferencyjny - to skomplikowana konstrukcja optyczna, która dzięki swojej budowie, precyzyjnie, nagle, wchodzi w dany przepuszczanego widma, podobnie nagle z niego schodzi.<br>
+<br>
+Dla lepszego zobrazowania, poniżej...<br>
+<br>
+Wratten, filtr o płaskim nachyleniu zboczy.<br>
+<span class="style-br">.</span><br>
+<div align="center"><img src="./images/Basics_Filtry/Basics_Filtry_60.png" border="0" alt=""></div>
+<br>
+<br>
+Interferencyjny, filtr o stromym nachyleniu zboczy.<br>
+<span class="style-br">.</span><br>
+<div align="center"><img src="./images/Basics_Filtry/Basics_Filtry_61.png" border="0" alt=""></div>
+<br>
+<br>
+<br>
+<br>
+Kontynuując zagadnienie <b>szerokości filtrów</b>, ale już z uwzględnieniem stromości zboczy.<br>
+<br>
+Co dla nas oznacza szerokość pasma 20nm? W którym miejscu pagórka mierzona jest jego szerokość? Przy czubku? Przy podstawie? Odpowiedź brzmi ani jedno, ani drugie. Przyjęło się, że za szerokość pracy filtra uznaje się 50% wysokości jego sprawności, stąd określenie: szerokość <b>połówkowa</b> filtra (szerokość w połowie wysokości). Patrz grafika poniżej.<br>
+<span class="style-br">.</span><br>
+<div align="center">
+<picture>
+  <source media="(max-width: 1080px)" srcset="./images/Basics_Filtry/Basics_Filtry_64-xl.png">
+  <img src="./images/Basics_Filtry/Basics_Filtry_64.png" alt="">
+</picture>
+</div>
+<br>
+<br>
+Skoro szerokość pracy filtra mierzy się na <u>50% wysokości jego sprawności</u>, to gdy sprawność ogólna filtra wynosi 80% (jak poniżej), a nie 100% (jak powyżej), za połowę wysokości sprawności filtra przyjmuje się 40% sprawności ogólnej i tu dokonuje się pomiar szerokości jego pasma (patrz poniżej).<br>
+<span class="style-br">.</span><br>
+<div align="center">
+<picture>
+  <source media="(max-width: 1080px)" srcset="./images/Basics_Filtry/Basics_Filtry_65-xl.png">
+  <img src="./images/Basics_Filtry/Basics_Filtry_65.png" alt="">
+</picture>
+</div>
+<br>
+<br>
+<br>
+Jak stromość zboczy przekłada się na użyteczność filtrów?<br>
+<br>
+Wyobraźcie sobie, że ktoś Was sprosi o stworzenie bardzo wąskiego filtra o dużej sprawności z filtrów o płaskich zboczach. Nakładacie więc na siebie dwie charakterystyki wyglądające jak zaprezentowane poniżej, próbując uzyskać jak najwyższą i jak najwęższą część wspólną.<br>
+<br>
+W takim układzie część wspólna jest wąska, ale jest niska.<br>
+<span class="style-br">.</span><br>
+<div align="center"><img src="./images/Basics_Filtry/Basics_Filtry_66.png" border="0" alt=""></div>
+<br>
+W takim układzie część wspólna jest wysoka, ale niestety jest bardzo szeroka.<br>
+<span class="style-br">.</span><br>
+<div align="center"><img src="./images/Basics_Filtry/Basics_Filtry_67.png" border="0" alt=""></div>
+<br>
+Słabo to wychodzi, prawda?<br>
+<br>
+Nie sposobna łącząc ze sobą tak rozlazłe powyższe charakterystyki, uzyskać czegoś na wzór poniższego. Przypomina to próbę usypania wieżowca z sypkiego piasku. Poniższą charakterystykę uzyskamy jedynie z filtrami o stromych zboczach. Zasadniczo, w świecie filtrów im zbocza są bardziej strome, tym lepiej.<br>
+<br>
+<div align="center"><img src="./images/Basics_Filtry/Basics_Filtry_68.png" border="0" alt=""></div>
+<br>
+<br>
+<strong>OBRAZ WIDMA</strong><br>
+<br>
+A jak nachylenie zboczy wpływa na obraz przepuszczanego widma?<br>
+<br>
+Obraz widma zależy od sprawności filtra w danym miejscu.<br>
+- Jeśli filtr dla danego koloru w danym miejscu posiada sprawność 100%, na obrazie widma dany kolor będzie wyświetlany z wypełnieniem 100%.<br>
+- Jeśli filtr dla danego koloru w danym miejscu posiada sprawność 0%, na obrazie widma dany kolor będzie wyświetlany z wypełnieniem 0%. Będzie reprezentowany przez czerń, czyli nic, zero, pusto, ciemno.<br>
+- Jeśli filtr dla danego koloru w danym miejscu posiada sprawność 50%, na obrazie widma dany kolor będzie wyświetlany z wypełnieniem 50%. Będzie połową przepuszczanego koloru i połową czerni.<br>
+- Jeśli filtr dla danego koloru w danym miejscu posiada sprawność 10%, na obrazie widma dany kolor będzie wyświetlany z wypełnieniem 10%. Będzie 10% przepuszczanego koloru i 90% czerni. <br>
+<br>
+<div align="center">
+<span class="style-br">.</span><br>
+<img src="./images/Basics_Filtry/Basics_Filtry_58.png" border="0" alt=""></div><br>
+<br>
+W życiu rzeczywistym rzadko mamy do czynienia z charakterystykami w kształcie przedstawionej powyżej piramidki.<br>
+Poniżej prezentacja typowych wykresów i obrazów widm.<br>
+<br>
+<div align="center">Filtr o płaskim nachyleniu zboczy<br>
+<span class="style-br">.</span><br>
+<img src="./images/Basics_Filtry/Basics_Filtry_60.png" border="0" alt=""></div>
+<br>
+<br>
+<div align="center">Obraz widma<br>
+<span class="style-br">.</span><br>
+<img src="./images/Basics_Filtry/Basics_Filtry_60x.png" border="0" alt=""></div>
+<br>
+Doświadczone oko, widząc już sam obraz widma, zorientuje się, że ma do czynienia z filtrem o płaskim nachyleniu zboczy, gdyż widmo jest mocno rozciągnięte, bardzo powoli słabnie na boki, aby leniwie przejść w czerń.<br>
+<br>
+Gdy jednak widmo wygląda jak poniżej...<br>
+<br>
+<div align="center">Obraz widma<br>
+<span class="style-br">.</span><br>
+<img src="./images/Basics_Filtry/Basics_Filtry_63x.png" border="0" alt=""></div>
+<br>
+<br>
+...już wiemy, że mamy do czynienia z filtrem o stromych zboczach i jego wykres wygląda tak...<br>
+<br>
+<div align="center">Filtr o stromym nachyleniu zboczy<br>
+<span class="style-br">.</span><br>
+<img src="./images/Basics_Filtry/Basics_Filtry_63.png" border="0" alt=""></div>
+<br>
+<br>
+i analogicznie...<br>
+<br>
+<div align="center">Filtr o stromym nachyleniu zboczy<br>
+<span class="style-br">.</span><br>
+<img src="./images/Basics_Filtry/Basics_Filtry_61.png" border="0" alt=""></div>
+<br>
+<br>
+Doświadczone oko, widząc już sam obraz widma, zorientuje się, że ma do czynienia z filtrem o stromym nachyleniu zboczy, gdyż widmo jest mocno skupione, błyskawicznie słabnie na boki od centrum, aby w chwilę przejść w czerń.<br>
+<br>
+<div align="center">Obraz widma<br>
+<span class="style-br">.</span><br>
+<img src="./images/Basics_Filtry/Basics_Filtry_61x.png" border="0" alt=""></div>
+<br>
+Jak widzicie, intensywność widma odpowiada sprawności filtra w danym miejscu, im widmo mocniejsze, tym sprawność wyższa, im widmo bledsze, tym sprawność filtra w tym rejonie jest słabsza.<br>
+<br>
+<br>
+&nbsp; &nbsp; <strong>Wykres sprawności w odniesieniu do stromości zboczy</strong> z oznaczeniem procentowym.<br>
+<br>
+<div align="center"><img src="./images/Basics_Filtry/Basics_Filtry_80.png" border="0" alt=""></div>
+<br>
+<br>
+<div align="center"><img src="./images/Basics_Filtry/Basics_Filtry_81.png" border="0" alt=""></div>
+<br>
+
+<br>
+<div align="center"><img src="./images/Basics_Filtry/Basics_Filtry_82.png" border="0" alt=""></div>
+<br>
+<br>
+<a href="#WD" ><span class="style-link">WRÓĆ DO WYKAZU DZIAŁÓW &#10148;</span></a><br>
+<br>
+<br>
+<hr style="border: 0px; background: #FFFFFF; height: 3px;"><a name="PRF"></a>
+<br>
+
+
+
+
+
+<span class="style-dzial">&#10074; PODSTAWOWE RODZAJE FILTRÓW</span><br>
+<br>
+<br>
+Rodzaje filtrów z uwagi na zakres pracy.<br>
+<br>
+<br>
+<strong>Long Pass Filter</strong> | Filtr długoprzepustowy<br>
+<span class="style-br">.</span><br>
+<div align="center"><img src="./images/Basics_Filtry/Types_of_filters_01.png" border="0" alt=""></div>
+<span class="style-br">.</span><br>
+Filtr tego typu przepuszcza wszystkie długości widma <b>powyżej</b> swojej wartości granicznej, a blokuje wszystkie <b>poniżej</b> tej wartości. Dla przykładu filtr 480nm Long pass przepuszcza 500nm, 550nm, 600nm itd, a blokuje 450nm, 400nm, 300nm.<br>
+<br>
+<br>
+<strong>Short Pass Filter</strong> | Filtr krótkoprzepustowy<br>
+<span class="style-br">.</span><br>
+<div align="center"><img src="./images/Basics_Filtry/Types_of_filters_02.png" border="0" alt=""></div>
+<span class="style-br">.</span><br>
+Filtr tego typu przepuszcza wszystkie długości widma <b>poniżej</b> swojej wartości granicznej, a blokuje wszystkie <b>powyżej</b> tej wartości. Dla przykładu filtr 700nm Short pass przepuszcza 650nm, 600nm, 550nm, 500nm itd, a blokuje 750nm, 800nm, 850nm.<br>
+<br>
+<br>
+<strong>Band Pass Filter</strong> | Filtr pasmowoprzepustowy<br>
+<span class="style-br">.</span><br>
+<div align="center"><img src="./images/Basics_Filtry/Types_of_filters_04.png" border="0" alt=""></div>
+<span class="style-br">.</span><br>
+Filtr tego typu przepuszcza pewien zakres widma o pewnej szerokości.<br>
+<br>
+<br>
+<div align="center">podkategoria Bandpass</div>
+<br>
+<br>
+<strong>Wide Band Pass Filter</strong> | Filtr szerokopasmowy przepustowy<br>
+<span class="style-br">.</span><br>
+<div align="center"><img src="./images/Basics_Filtry/Types_of_filters_03.png" border="0" alt=""></div>
+<span class="style-br">.</span><br>
+Filtr tego typu przepuszcza pewien zakres widma od pewnej wartości do pewnej wartości.<br>
+<br>
+<br>
+<div align="center">podkategoria Bandpass</div>
+<br>
+<br>
+<strong>Narrow Band Pass Filter</strong> | Filtr wąskopasmowy przepustowy<br>
+<span class="style-br">.</span><br>
+<div align="center"><img src="./images/Basics_Filtry/Types_of_filters_05.png" border="0" alt=""></div>
+<span class="style-br">.</span><br>
+Filtr tego typu przepuszcza wąskie pasma zakresu widma w zakresie swojej pracy.<br>
+<br>
+<br>
+<div align="center">podkategoria Bandpass</div>
+<br>
+<br>
+<strong>Multi Band Pass Filter</strong> | Filtr wielopasmowo przepustowy<br>
+<span class="style-br">.</span><br>
+<div align="center"><img src="./images/Basics_Filtry/Types_of_filters_06.png" border="0" alt=""></div>
+<span class="style-br">.</span><br>
+Filtr tego typu przepuszcza wiele różnych wąskich zakresów widma jednocześnie.<br>
+<br>
+<br>
+<strong>IR cut Filter</strong><br>
+<span class="style-br">.</span><br>
+<div align="center"><img src="./images/Basics_Filtry/Types_of_filters_07.png" border="0" alt=""></div>
+<span class="style-br">.</span><br>
+Filtr tego typu blokuje podczerwień (IR), przepuszczając pozostałą część widma.<br>
+<br>
+<br>
+<strong>IR pass Filter</strong><br>
+<span class="style-br">.</span><br>
+<div align="center"><img src="./images/Basics_Filtry/Types_of_filters_08.png" border="0" alt=""></div>
+<span class="style-br">.</span><br>
+Filtr tego typu przepuszcza podczerwień (IR), blokując pozostałą część widma.<br>
+Filtr tego typu stosuje się często w astrofotografii planetarnej dla poprawienia stabilności obrazu planet i Księżyca.<br>
+<br>
+<br>
+<strong>IR/UV cut Filter</strong><br>
+<span class="style-br">.</span><br>
+<div align="center"><img src="./images/Basics_Filtry/Types_of_filters_09.png" border="0" alt=""></div>
+<span class="style-br">.</span><br>
+Filtr tego typu wycina i podczerwień (IR), i ultrafiolet (UV), przepuszcza jedynie widzialne widmo światła mieszczące się pomiędzy UV i IR.<br>
+Filtr tego typu stosuje się często jako filtr luminancji (L) w astrofotografii RGB.<br>
+<br>
+<br>
+<a href="#WD" ><span class="style-link">WRÓĆ DO WYKAZU DZIAŁÓW &#10148;</span></a><br>
+<br>
+<br>
+<hr style="border: 0px; background: #FFFFFF; height: 3px;"><a name="KOIII"></a>
+<br>
+
+
+
+
+
+<span class="style-dzial">&#10074; KOLOR PASMA OIII</span><br>
+<br>
+<br>
+Pasmo OIII jest zielone czy niebieskie? A może jednak turkusowe? Jaki mają kolor mgławice planetarne składające się z OIII?<br>
+<br>
+Czy to przypadek, że filtry B i G z zestawu filtrów RGB Baader <a href="https://assets.baader-planetarium.com/media/extendware/ewimageopt/media/inline/aa/0/baader-r-ccd-filter-1-1-4--96f.jpg" target="_blank"><span class="style-link"><u>zachodzą na siebie zakresem</u></span></a> w obrębie OIII ?<br>
+<br>
+Czy to dlatego, że producent postanowił być fajnym wujkiem, i jak już <a href="#vx-BG-OIII" target="_blank"><span class="style-link"><u>wcześniej</u></span></a> wspominałem, zapragnął umożliwić nabywcom zestawienie obu filtrów w filtr OIII?<br>
+<br>
+Problem jest bardziej złożony i zaczyna się od odwiecznego sporu o to, czy OIII jest zielone, czy niebieskie, choć jak widać, na spektrum wypada w turkusie, a więc jest zielono-niebieskie, lub niebiesko-zielone, jak kto woli. Więc, aby uzyskać taki efekt przy składaniu zdjęcia RGB, Baader zmuszony był, i filtrem G, i filtrem B, wejść na pasmo OIII, aby po zsumowaniu obu kolorów powstawał kolor turkusowy.<br>
+<br>
+Dla odmiany dział naukowy ZWO uznał najwidoczniej, że OIII jest jednak zielone, bo charakterystyka ich filtrów wygląda <a href="https://astronomy-imaging-camera.com/wp-content/uploads/RGBL-ASI1600.jpg" target="_blank"><span class="style-link"><u>następująco</u></span></a>, pasmo OIII wypada w obrębie filtra zielonego (G) i jedynie na dole muska niebieski (B). W takim zestawie filtrów mgławica M27 będzie zielono-czerwona, a nie jak u Baader-a, turkusowo-czerwona. Warto posiadać taką wiedzę, aby w pełni świadomie dokonywać wyboru filtrów, kompletując zestaw astrofotograficzny.<br>
+<br>
+Astrodon, też świadomie (wspominają o tym w opisach), wybrał kolor turkusowy dla pasma OIII, czyli u nich filtry B i G, też zachodzą na siebie zakresem.<br>
+<br>
+<br>
+<a href="#WD" ><span class="style-link">WRÓĆ DO WYKAZU DZIAŁÓW &#10148;</span></a><br>
+<br>
+<br>
+<hr style="border: 0px; background: #FFFFFF; height: 3px;"><a name="SBF"></a>
+<br>
+
+
+
+
+
+<span class="style-dzial">&#10074; SAMODZIELNE BADANIE FILTRÓW</span><br>
+<br>
+<br>
+Co prawda, producenci rysują na etykietach deklarowane zakresy pracy filtrów, jednak nie musimy im wierzyć na słowo, możemy samodzielnie sprawdzić, jak działa dany filtr, w tym celu musimy zbudować prosty amatorski spektroskop. Istnieją różnie rodzaje tego urządzenia, polecam tę wersję: <a href="./images/Spectrum/Spectroscope-01.pdf" target="_blank"><span class="style-link"><u>Spektroskop</u></span></a> - <a href="./images/Spectrum/Spectroscope-02.pdf" target="_blank"><span class="style-link"><u>Opis budowy</u></span></a>. Jest ona najlepsza z proponowanych w sieci, nadto nie wymaga usuwania powłoki odblaskowej z płyty, ani jej cięcia, a cięcie płyty, czy łamanie, nie jest bezpieczną czynnością, z uwagi na jej twardość i sposób, w jaki pęka, tworząc drobne, ostre, przeźroczyste odpryski.<br>
+<br>
+<br>
+Przykładowe wykorzystanie możliwości, jakie daje nam posiadanie własnego spektroskopu.<br>
+<br>
+Posiadamy filtr L Baader IR/UV-cut oraz stary filtr L GSO IR-cut, oba teoretycznie czynią to samo zadanie, ale fotografując niebo, dostrzegamy, iż w filtrze L GSO IR-cut jakoś dziwnie mało wpada nam do kamerki wodoru (Ha), a przecież dla nas astrofotografów wodór jest bezcennym pasmem. Ale... posiadając spektroskop, możemy dokonać badania, które ujawni nam przyczynę takiego stanu rzeczy. Przystawiamy przed okienko spektroskopu filtr L Baader IR/UV-cut, a po chwili filtr L GSO IR-cut i dostrzegamy, że filtr L GSO IR-cut kończy się wcześniej w zakresie czerwieni niż filtr L Baader IR/UV-cut. Czy to możliwe, dumamy, że producent wypuścił taki bubel i sprzedaje filtr L, który kończy się zakresem pracy tuż przed pasmem Ha? Dla pewności bierzemy dla porównania filtr Ha 7nm i stwierdzamy ostatecznie, iż nasze odkrycie staje się smutnym faktem. GSO w starszych modelach filtra L, od strony czerwieni, zamykało pasmo tuż przed pasmem Ha i wodór, zamiast wpadać do naszych kamerek, jest wycinany przez filtr.<br>
+<br>
+Dla lepszego zobrazowania, poniżej zestawione ze sobą zdjęcia poszczególnych filtrów wykonane za pomocą opisanego tu spektroskopu.<br>
+<span class="style-br">.</span><br>
+<div align="center"><img src="./images/Basics_Filtry/Sptr-IRUV-Ha7-IRcutGSO.png" border="0" alt=""></div>
+<br>
+<br>
+Inny przykład.<br>
+<br>
+Czy to prawda, że filtr Neodymowy osłabia zakres widma w obrębie Light Pollution (LP)? Sprawdźmy!<br>
+<br>
+Bierzemy do badania filtr L oraz filtr Neodymowy i robimy zestawienie porównawcze. Jak widać poniżej, badanie wykazało, iż filtr Neodymowy faktycznie wycina część pasma w obrębie Light Polution (LP).<br>
+<span class="style-br">.</span><br>
+<div align="center"><img src="./images/Basics_Filtry/Sptr-Celar-Neod.png" border="0" alt=""></div>
+<br>
+<br>
+Ale co tam filtr Neodymowy, zobaczcie jak IDAS LPS-D1 wycina widmo w tym rejonie.<br>
+<span class="style-br">.</span><br>
+<div align="center"><img src="./images/Basics_Filtry/Sptr-IDAS.png" border="0" alt=""></div>
+<br>
+<br>
+Można też wykonać wiele innych badań, nie trzeba producentom wierzyć na słowo, fajnie jest poczuć empirycznie to, co dla nas nie jest widoczne gołym okiem :)<br>
+<br>
+<br>
+Opisaną w tym poradniku wiedzę wykorzystałem <a href="Spectrum.html#vx-F550M" target="_blank"><span class="style-link"><u>TU</u></span></a> i <a href="SLOAN.html" target="_blank"><span class="style-link"><u>TU</u></span></a> Przyznacie chyba sami, że potrafi się przydać astronomowi amatorowi :)<br>
+<br>
+<br>
+<a href="#WD" ><span class="style-link">WRÓĆ DO WYKAZU DZIAŁÓW &#10148;</span></a><br>
+<br>
+<br>
+<hr style="border: 0px; background: #FFFFFF; height: 3px;"><a name="RF"></a>
+<br>
+
+
+
+
+
+<span class="style-dzial">&#10074; RODZAJE FILTRÓW Z UWAGI NA KONSTRUKCJĘ</span><br>
+<br>
+<br>
+<strong>- Absorpcyjne/Pochłaniające/Barwne Wratten</strong><br>
+<span class="style-br">.</span><br>
+W filtrze optycznym absorpcyjnym jest wykorzystywane zjawisko selektywnej absorpcji światła. Filtry szklane kolorowe są wykonane ze szkła optycznego Schott. Właściwości spektralne tych filtrów są jednorodne w całej ich aperturze i niezależne od kąta padania, i tu ich przewaga nad droższymi filtrami interferencyjnymi.
+Filtry Wratten zostały nazwane od nazwiska założyciela pierwszej firmy fotograficznej, brytyjskiego wynalazcy Fredericka Wrattena.
+Oznaczenia filtrów Wratten to system składający się z liczby, po której czasami następuje litera (litery rosną wraz ze wzrostem siły) polecam <a href="https://en.wikipedia.org/wiki/Wratten_number" target="_blank"><span class="style-link"><u>WYKAZ</u></span></a>. Liczba określa kolor filtra, ale nie koreluje z długością przenoszonego pasma.<br>
+Ciekawa <a href="https://agenaastro.com/articles/choosing-a-color-planetary-filter.htmll" target="_blank"><span class="style-link"><u>ROZPISKA</u></span></a> widm podstawowych filtrów.<br>
+
+Filtry typu Wratten są tanie w produkcji i z uwagi na swoją cenę są szeroko dostępne amatorom. Są odporne na zarysowania i na czynniki środowiskowe oraz chemiczne.<br>
+Niestety, słabe nachylenie zboczy transmisji, sprawia, że nie nadają się do zastosowań precyzyjnych.<br>
+<br>
+<br>
+<strong>- Dichroiczne/Interferencyjne</strong><br>
+<span class="style-br">.</span><br>
+Filtry interferencyjne wykorzystują efekt interferencji fal w celu otrzymania żądanej transmisji spektralnej. Filtry te są produkowane poprzez osadzanie na podłożu cienkich warstw o różnych współczynnikach załamania. Niestety, właściwości spektralne tych filtrów nie są jednorodne w całej ich aperturze i są zależnie od kąta padania, i tu przewaga tańszych filtrów absorpcyjnych.<br>
+Wiele współczesnych filtrów Interferencyjnych to tak naprawdę filtry Dichroiczne, nazywane też interferencyjnymi, ale nie stanowiące w klasycznym rozumieniu filtrów interferencyjnych jak Etalon Ha. Ich budowa różni się w ten sposób, że klasyczny filtr interferencyjny stanowią dwa podłoża z powłokami półprzepuszczalnymi przedzielone na środku warstwą rozdzielającą, natomiast filtry Dichroiczne stanowią filtr o jednym podłożu, barwnym lub neutralnym (bezbarwnym) i napylonymi na nim jednostronnie wieloma odpowiednimi powłokami w liczbach dochodzących do 100 lub więcej.<br>
+Polecam niniejszy <a href="https://www.edmundoptics.com/knowledge-center/application-notes/optics/optical-filters/" target="_blank"><span class="style-link"><u>OPIS</u></span></a>.<br>
+Filtry tego typu, są drogie produkcji i z uwagi na swoją cenę są mniej dostępne amatorom, są mniej odporne na zarysowania i na czynniki środowiskowe oraz chemiczne<br>
+W zamian posiadają strome nachylenie zboczy, możliwość dowolnego manipulowania zakresami przepuszczania i blokowania, oraz wysoka wartość transmisji sprawiają, co sprawia, że są wręcz stworzone do zastosowań precyzyjnych takich jak Narrow Band, Multi Band Pass Filter itp.<br>
+<br>
+<br>
+<strong>- Interferencyjne</strong><br>
+<span class="style-br">.</span><br>
+Filtry interferencyjne w klasycznym rozumieniu stanowią dwa płaskie równoległe podłoża szklane zwane etalonami z napylonymi od wewnątrz powłokami półprzepuszczalnymi przedzielonymi na środku warstwą rozdzielającą. Przykład takiego filtra w astronomii stanowi Etalon Ha.<br>
+<br>
+<br>
+<strong>PEWNE KWESTIE TECHNICZNE FILTRÓW</strong></strong><br>
+<br>
+<strong>- Polerowanie płomieniowe</strong><br>
+<span class="style-br">.</span><br>
+W uproszczeniu polerowanie płomieniowe polega na lekkim stopieniu gorącym płomieniem powierzchni szkła/filtra celem utworzenia gładkiej powierzchni na materiale. Z uwagi na niższy koszt takiego polerowania, często jest ono stosowane w tanich filtrach typu Wratten. Dla odmiany Baader szczyci się faktem, iż ich filtry barwne serii Lonpass są filtrami polerowanymi optycznie na idealną równoległość, oraz gwarantującą jakość powierzchni dla ćwierć długości fali, twierdząc, że filtry polerowane płomieniowo nie stanowią wystarczająco precyzyjnych elementów optycznych.<br>
+<br>
+<strong>- Cięcie filtrów</strong><br>
+<span class="style-br">.</span><br>
+Istnieją dwa sposoby wytworzenia filtrów okrągłych lub kwadratowych.<br>
+- Metoda pierwsza. Spory arkusz jest polerowany i powlekany warstwowo w całości, a następnie wycinane są filtry do żądanego rozmiaru. Ta metoda produkcji filtrów jest znacznie tańsza, ale nie gwarantuje ich jakości. Powierzchnia często polerowana jest wspomnianą uprzednio metodą płomieniową, napylone filtry w momencie cięcia poddawane są siłom, którym tak precyzyjna optyka poddawana być nie powinna, mogą także ujawnić się potem jakieś naprężenia, nadto, powłoki w miejscach cięć zostają uszkodzone, co może  czasem objawiać się ich dalszą degradacją.<br>
+- Metoda druga. Filtry są wycinane z arkusza na wymiar, następnie dwustronnie polerowane optycznie na równoległość i gładkość powierzchni, na koniec powlekane warstwowo, a brzegi powłok zabezpieczane. Jest ona dużo droższa, ale gwarantuje dużo lepszą jakość produktu.<br>
+<br>
+<br>
+<a href="#WD" ><span class="style-link">WRÓĆ DO WYKAZU DZIAŁÓW &#10148;</span></a><br>
+<br>
+<br>
+<hr style="border: 0px; background: #FFFFFF; height: 3px;"><a name="DFR"></a>
+<br>
+
+
+
+
+
+<span class="style-dzial">&#10074; DŁUGOŚĆ FALI A ROZDZIELCZOŚĆ</span><br>
+<br>
+<br>
+Długość fali ma bezpośredni wpływ na rozdzielczość obrazowania, zrozumie i przekona się ten, kto spróbuje sfotografować parę gwiazd na granicy rozdzielczości teleskopu filtrem 400nm i filtrem 800nm.</strong><br>
+<br>
+Ale po kolei...<br>
+<br>
+Powszechnie wiadomo, że aby oszukać słabszy seeing, fotografując np. Księżyc, wystarczy zastosować filtr IR pass i obraz stanie się stabilniejszy. Wiedzieć jednak należy, że za cenę poprawy jakości obrazu, tracimy rozdzielczość optyki i zamiast od razu stosować filtr 800nm, może warto najpierw wypróbować filtr 610nm<br>
+<br>
+Dla przykładu, widmo w zakresie 400nm rysuje obraz plamką 2x mniejszą niż widmo w zakresie 800nm, gdyby więc stworzyć filtr fioletowy 5nm (w przedziale 400nm-405nm)<br>
+<span class="style-br">.</span><br>
+<div align="center"><img src="./images/Basics_Filtry/Basics_Filtry_70_UV.png" border="0" alt=""></div>
+<br>
+<br>
+...oraz filtr podczerwony 5nm (w przedziale 800nm-805nm)...<br>
+<span class="style-br">.</span><br>
+<div align="center"><img src="./images/Basics_Filtry/Basics_Filtry_70_IR.png" border="0" alt=""></div>
+<br>
+... i kazać tym filtrom narysować malutki kraterek księżycowy, uzyskany rezultat prezentowałby się jak poniżej. Rozmiar plamki obrazowania nie wynika z szerokości filtra (oba posiadają szerokość 5nm, zresztą ona sama w sobie nie ma wpływu na rozdzielczość), lecz z długości fali, którą rzeczony filtr obsługuje. Fiolet pracuje na 400nm, a IR (podczerwień) na 800nm. Im krótsze pasmo, tym plamka obrazowania jest mniejsza, im dłuższe pasmo, tym plamka obrazowania jest większa.<br>
+<br>
+<div align="center"><img src="./images/Basics_Filtry/400nm-800nm.png" border="0" alt=""></div>
+<br>
+<br>
+Jak więc widzicie, nie można bezkarnie, celem uniknięcia gorszego seeingu, z obrazowaniem wchodzić coraz głębiej w podczerwień, gdyż tracimy wtedy na rozdzielczości.<br>
+<br>
+Doskonałym przykładem tego, jak długość fali wpływa na rozdzielczość na granicy dyfrakcji, jest <a href="./images/Basics_Filtry/325-532-785.png" target="_blank"><span class="style-link"><u>GRAFIKA</u></span></a> pochodząca ze <a href="https://www.edinst.com/blog/laser-spot-size-in-a-microscope/" target="_blank"><span class="style-link"><u>STRONY</u></span></a>.<br>
+<br>
+Moje opracowanie na temat rozdzielczości w astrofotografii znajdziecie <a href="double_multiple_star\Rozdzielczosc.html" target="_blank"><span class="style-link"><u>TUTAJ</u></span></a><br>
+<br>
+<br>
+<a href="#WD" ><span class="style-link">WRÓĆ DO WYKAZU DZIAŁÓW &#10148;</span></a><br>
+<br>
+<br>
+<hr style="border: 0px; background: #FFFFFF; height: 3px;"><a name="BST"></a>
+<br>
+
+
+
+
+
+<span class="style-dzial">&#10074; BLUESHIFT</span><br>
+<br>
+Dawniej wszystko wydawało się być proste, jednak obecnie astromaniacy powoli stają się inżynierami elektronikami i optykami, systematycznie zgłębiając budowę i zasadę działania kamer, poznając i rozbierając na drobne budowę i działanie filtrów, fakt, że zmieniły się okoliczności, ale po kolei ...<br>
+<br>
+Blueshift był z nami od zawsze, ale nie wychylał się, skąd więc teraz takie poruszenie z jego powodu?<br>
+<br>
+Dawniej posiadanie teleskopu o światłosile f&#47;8 to było coś ...<br>
+Potem pojawiły się sprzęty o światłosile f&#47;4, ależ one były szybkie ...<br>
+Obecnie światłosiła f&#47;2 nikogo nie dziwi i Blueshift stał się istotny.<br>
+<br>
+<div align="center"><img src="./images/Basics_Filtry/BST-01-anim.gif" border="0" alt=""></div>
+<br>
+<span class="style-br">.</span><br>
+Dawniej posiadanie filtra Ha o szerokości 30nm to było coś ...<br>
+Potem zaczęto produkować coraz węższe filtry, ale to jeszcze nie był ten moment ...<br>
+Obecnie mamy filtry o szerokości 3nm - 2nm i Blueshift stał się istotny.<br>
+<br>
+<div align="center"><img src="./images/Basics_Filtry/BST-02-anim.gif" border="0" alt=""></div>
+<br>
+Więc...<br>
+<span class="style-br">.</span><br>
+Gdy producent projektuje i wytwarza filtr, to podejmuje decyzję, jakie pasmo ma ten filtr przepuszczać.<br>
+Czy to będzie Ha, OIII, SII lub jeszcze inna linia widmowa, najważniejsze jest to, aby dany filtr swoim zakresem przepuszczania ją obejmował, a najlepiej w szczytowym punkcie transmisji.<br>
+<br>
+<div align="center"><img src="./images/Basics_Filtry/BST-03-anim.gif" border="0" alt=""></div>
+<br>
+Gdyby jednak, z jakiegoś powodu, uzyskana przez producenta charakterystyka, w czasie użytkowania, mniej lub bardziej uciekała w bok ... jak to wpłynie na efekt końcowy?<br>
+<br>
+Bo gdy zakres transmisji, przesuwa się mniej lub bardziej, w takim filtrze ...<br>
+<span class="style-br">.</span><br>
+<div align="center"><img src="./images/Basics_Filtry/BST-04a-anim.gif" border="0" alt=""></div>
+<br>
+... lub takim ...<br>
+<span class="style-br">.</span><br>
+<div align="center"><img src="./images/Basics_Filtry/BST-04b-anim.gif" border="0" alt=""></div>
+<span class="style-br">.</span><br>
+...to jeszcze nic złego się nie dzieje ...<br>
+<br>
+... ale gdy niniejsze zjawisko występuje w takim filtrze ...<br>
+<span class="style-br">.</span><br>
+<div align="center"><img src="./images/Basics_Filtry/BST-04c-anim.gif" border="0" alt=""></div>
+<br>
+... no to Houston, mamy problem, ponieważ dwa uprzednie filtry, niezależnie od sytuacji, nadal pracują ze sprawnością 90%, ale ostatni, najwęższy filtr, radykalnie stracił na transmisji.<br>
+<br>
+Wróćmy teraz do światłosiły ...<br>
+<br>
+<div align="center"><img src="./images/Basics_Filtry/BST-01-anim.gif" border="0" alt=""></div>
+<br>
+... dodajmy sensor i filtr ...<br>
+<span class="style-br">.</span><br>
+<div align="center"><img src="./images/Basics_Filtry/BST-05-anim.gif" border="0" alt=""></div>
+<br>
+... aby stwierdzić, że niezależnie od światłosiły, w osi optycznej nic szczególnego się nie dzieje ...<br>
+<span class="style-br">.</span><br>
+<div align="center"><img src="./images/Basics_Filtry/BST-06-anim.gif" border="0" alt=""></div>
+<br>
+... jednak gdy weźmiemy pod uwagę skrajne promienie światła ...<br>
+<span class="style-br">.</span><br>
+<div align="center"><img src="./images/Basics_Filtry/BST-07-anim.gif" border="0" alt=""></div>
+<br>
+... to się okazuje, że zależnie od światłosiły obiektywu, skrajne promienie światła padają na filtr pod coraz większym kątem.<br>
+<span class="style-br">.</span><br>
+<div align="center"><img src="./images/Basics_Filtry/BST-08-anim.gif" border="0" alt=""></div>
+<br>
+I tu pojawia się nasz tytułowy Blueshift, bo jak się okazuje, kąt, pod jakim promień światła pada na filtr, ma wpływ na pracę filtra.<br>
+<br>
+Jeśli zaprojektujemy filtr, który przepuszcza widmo w danym zakresie, to faktycznie tak jest, ale tylko wtedy, gdy światło pada na niego prostopadle.<br>
+<span class="style-br">.</span><br>
+<div align="center"><img src="./images/Basics_Filtry/BST-09-anim.gif" border="0" alt=""></div>
+<br>Blueshift dzieje się wtedy, gdy światło na filtr pada pod kątem.<br> 
+Blueshift jest tym większy, pod im większym kątem pada światło na filtr.<br>
+<span class="style-br">.</span><br>
+<div align="center"><img src="./images/Basics_Filtry/BST-10-anim.gif" border="0" alt=""></div>
+<br>
+Podsumowując, wracamy do początku opowieści :)<br>
+<br>
+Blueshift był z nami od zawsze ... ale ...<br>
+<br>
+Dawniej teleskopy o światłosile f&#47;8 ...<br>
+Dawniej filtry o szerokości 30nm ...<br>
+... Blueshift nie był istotny.<br>
+<br>
+<div align="center"><img src="./images/Basics_Filtry/BST-11-anim.gif" border="0" alt=""></div>
+<br>
+Potem sprzęty o światłosile f&#47;4 ...<br>
+Potem węższe filtry ...<br>
+... ale to jeszcze nie był ten moment, by Blueshift odgrywał jakąś rolę.<br>
+<br>
+<div align="center"><img src="./images/Basics_Filtry/BST-12-anim.gif" border="0" alt=""></div>
+<br>
+Obecnie światłosiły f&#47;2 ...<br>
+Obecnie filtry 3nm - 2nm ...<br>
+... i Blueshift stał się krytyczny.<br>
+<br>
+<div align="center"><img src="./images/Basics_Filtry/BST-13-anim.gif" border="0" alt=""></div>
+<br>
+Blueshift sprawia, że zakres pracy filtra przesuwa się, w miarę odchylania się promieni światła od kąta prostego, sprawiając, że zaplanowana przez producenta optymalna charakterystyka transmisji filtra przepada.<br>
+<br>
+A tak właściwie ... to dlaczego Blueshift? :)<br>
+<br>
+Z języka angielskiego blue-niebieski, shift-przesunięcie.<br>
+<br>
+Ale dlaczego przesunięcie ku niebieskiemu?<br>
+<br>
+Bo przesunięcie następuje zawsze w kierunku widma niebieskiego. W przypadku naszego opracowania z lewą stronę.<br>
+<span class="style-br">.</span><br>
+<div align="center"><img src="./images/Basics_Filtry/BST-11.png" border="0" alt=""></div>
+<br>
+<br>
+<hr>
+Zakres migracji pasma filtra zastosowany na animacjach nie jest przypadkowy i jest właściwy dla kątów skrajnych promieni światła przy f&#47;8, f&#47;4, f&#47;2.<br>
+<hr>
+<br>
+Blueshift jest tym większy, im większy jest kąt odchylenia padania promieni światła na filtr od kąta prostego, a to implikuje kolejne ciekawe zależności.<br> 
+<span class="style-br">.</span><br>
+W obrębie obiektywu o światłosile f&#47;2 występują promienie światła prostopadłe względem filtra i takie o odchyleniu 1&#176;, 2&#176;, 3&#176;, 4&#176;, ..., 11&#176;, 12&#176;, 13&#176;, 14&#176;, i one wszystkie przechodzą przez nasz filtr ...<br>
+<span class="style-br">.</span><br>
+<div align="center"><img src="./images/Basics_Filtry/BST-14-anim.gif" border="0" alt=""></div>
+<br>
+... a to oznacza, że to nie jest tak, że cały obiektyw o światłosile f&#47;2 pracuje z danym filtrem z obniżoną sprawnością, lecz sprawność jego obniża się z w miarę oddalania się promieni światła od osi optycznej.<br>
+<span class="style-br">.</span><br>
+<div align="center"><img src="./images/Basics_Filtry/BST-15-anim.gif" border="0" alt=""></div>
+<br>
+Pech chce, że sprawność filtra maleje, wraz z przemieszczaniem się w zewnętrzne rejony obiektywu, czyli te, o największej powierzchni ...<br>
+<br>
+<div align="center"><img src="./images/Basics_Filtry/BST-16.png" border="0" alt=""></div>
+<br>
+...  więc przekornie, filtr pracuje najwydajniej tam, gdzie światła jest najmniej, a pracuje najgorzej tam, gdzie światła jet najwięcej.<br>
+<span class="style-br">.</span><br>
+<div align="center"><img src="./images/Basics_Filtry/BST-32-anim.gif" border="0" alt=""></div>
+<br>
+<div align="center"><img src="./images/Basics_Filtry/BST-33-anim.gif" border="0" alt=""></div>
+<br>
+Gdy więc fotografujemy środkiem kadru, małą mgławicę planetarną, bardzo wąskim filtrem OIII, o sprawności 90&#37;, ciesząc się, że nic się nie marnuje z naszego super jasnego teleskopu f&#47;2, okazuje się, że środek naszego filtra faktycznie pracuje ze sprawnością 90&#37;, jednak im dalej brzegu, tym bardziej sprawność maleje i z naszego 90% bezcennego OIII pozostaje dużo mniej, niż nam się wydaje.<br>
+<br>
+<hr>
+<br>
+Czy nie ma na to zjawisko żadnej rady?<br>
+<br>
+Oczywiście zaczęto poszukiwać sposobu zaradzenia problemowi, poniżej wymienię trzy przykłady.<br>
+<span class="style-br">.</span><br>
+1 - sposób naukowy<br>
+2 - sposób sprytny<br>
+3 - sposób absurdalny<br>
+
+
+
+
+
+___________________________________<br>
+<span class="style-br">.</span><br>
+<strong>1 sposób - naukowy</strong><br>
+<span class="style-br">.</span><br>
+Chcąc zaradzić opisywanemu tu zjawisku Blueshift, zamiast filtrów o jednorodnej charakterystyce ...<br>
+<span class="style-br">.</span><br>
+<div align="center"><img src="./images/Basics_Filtry/BST-20a.png" border="0" alt=""></div>
+<br>
+... podejmuje się próby konstruowania filtrów, których charakterystyka zmienia się w miarę oddalania się od centrum krążka.<br>
+<span class="style-br">.</span><br>
+<div align="center"><img src="./images/Basics_Filtry/BST-20b.png" border="0" alt=""></div>
+<br>
+Taki niejednorodny filtr, dla prostopadłych promieni światła, posiada niniejszą charakterystykę ...<br>
+<span class="style-br">.</span><br>
+<div align="center"><img src="./images/Basics_Filtry/BST-20-anim.gif" border="0" alt=""></div>
+<br>
+... aby ostatecznie po uwzględnieniu zjawiska Blueshift, uzyskać poniższą charakterystykę wynikową.<br>
+<span class="style-br">.</span><br>
+<div align="center"><img src="./images/Basics_Filtry/BST-21-anim.gif" border="0" alt=""></div>
+<br>
+Filtr posiada jakoby poprawkę, która po pojawieniu się przesunięcia Blueshift, kompensuje wynikową charakterystykę filtra do pożądanej wartości.<br>
+<br>
+Dla porównania przywołam ponownie klasyczny filtr o jednolitej charakterystyce dla całego krążka.<br>
+<span class="style-br">.</span><br>
+<div align="center"><img src="./images/Basics_Filtry/BST-22-anim.gif" border="0" alt=""></div>
+<br>
+Jednak przywołany tu sposób ma wadę zasadniczą w postaci zwiększonej trudności produkcji, bo jakby nie patrzeć, to wykonanie filtra jednorodnego na całej powierzchni krążka jest prostsze i tańsze (a często producentom nawet to nie wychodzi) a co dopiero celować w różne precyzyjne przesunięcia.<br>
+<br>
+
+
+
+___________________________________<br>
+<span class="style-br">.</span><br>
+<strong>2 sposób - sprytny</strong><br>
+<span class="style-br">.</span><br>
+Można próbować oszukać prawa fizyki, produkując filtr o jednakowej charakterystyce na całym krążku, a jednocześnie, o lepszych właściwościach niż filtr pokazany na ostatniej animacji powyżej.<br>
+Cały zamysł polega na tym, że skoro im dalej od środka, tym bardziej rośnie powierzchnia ...<br>
+<span class="style-br">.</span><br>
+<div align="center"><img src="./images/Basics_Filtry/BST-30.png" border="0" alt=""></div>
+<br>
+... gdy centrum krążka filtra (sekcja f&#47;8) obsługuje jedynie 6&#37; światła zbieranego przez obiektyw, dalej (sekcja f&#47;4) 19&#37;, a pierścień zewnętrzny (sekcja f&#47;2) aż 75&#37; ...<br>
+... nie ma korzyści z filtra zaprojektowanego dla prostopadłych promieni światła o poniższej charakterystyce ...<br>
+<span class="style-br">.</span><br>
+<div align="center"><img src="./images/Basics_Filtry/BST-31.png" border="0" alt=""></div>
+<br>
+...gdzie sprawność filtra 90&#37; obsługuje 6&#37; powierzchni obiektywu, a sprawność pomiędzy 7&#37;-85&#37; obsługuje 75&#37; obiektywu.<br>
+<span class="style-br">.</span><br>
+<div align="center"><img src="./images/Basics_Filtry/BST-32-anim.gif" border="0" alt=""></div>
+<br>
+<div align="center"><img src="./images/Basics_Filtry/BST-33-anim.gif" border="0" alt=""></div>
+<br>
+Czy nie lepiej dać stałą poprawkę na cały filtr, ale tak dobraną, aby szczyt sprawności osiągnąć w rejonach o największej powierzchni?<br>
+Dla prostopadłych promieni światła taki filtr będzie wyglądał następująco ...<br>
+<span class="style-br">.</span><br>
+<div align="center"><img src="./images/Basics_Filtry/BST-34.png" border="0" alt=""></div>
+<span class="style-br">.</span><br>
+... teoretycznie, strasznie nietrafiony ...<br>
+<br>
+... ale gdy dodamy Blueshift, dzieje się magia ... :)<br>
+<span class="style-br">.</span><br>
+<div align="center"><img src="./images/Basics_Filtry/BST-35-anim.gif" border="0" alt=""></div>
+<br>
+<div align="center"><img src="./images/Basics_Filtry/BST-36-anim.gif" border="0" alt=""></div>
+<br>
+Co prawda, brzegi obiektywu nie pracują tak wzorowo, jak jego centrum, bo im bliżej brzegów, tym więcej nakłada się wad optycznych, ale coś za coś.<br>
+<br>
+<hr>
+Zakres migracji pasma filtra zastosowany na animacjach nie jest przypadkowy i jest właściwy dla kątów skrajnych promieni światła przy f&#47;8, f&#47;4, f&#47;2.<br>
+<hr>
+<br>
+
+
+___________________________________<br>
+<span class="style-br">.</span><br>
+<strong>3 sposób - absurdalny</strong><br>
+<span class="style-br">.</span><br>
+No i pomysł absurdalny, wykombinowany przez amatorów, nierozumiejących natury Blueshift-u. Przechylamy filtr o jakiś kąt !!!<br>
+<br>
+<div align="center"><img src="./images/Basics_Filtry/BST-40-angle-anim.gif" border="0" alt=""></div>
+<br>
+Zacznijmy od podstaw.<br>
+<span class="style-br">.</span><br>
+- Im Blueshift jest mniejszy, tym lepiej.<br>
+- Blueshift jest tym mniejszy, im kąt padania promieni światła jest bliższy prostopadłości.<br>
+- Przy prostopadłym umieszczeniu filtra suma kątów odchylonych od prostopadłości jest najmniejsza.<br>
+<span class="style-br">.</span><br>
+Po jaką cholerę, w taki razie, przechylać filtr?<br>
+<br>
+Idźmy dalej.<br>
+<span class="style-br">.</span><br>
+- O jaki kąt przechylamy nasz filtr? Jakaś uzasadniona wartość?<br>
+- Może 14&#176? Czyli o wartość promieni skrajnych światłosiły f&#47;2. Więcej nie ma sensu, bo już żadne promienie światła nie będą względem filtra prostopadłe.<br> 
+- A może mniej? A jeśli tak, to, o ile?<br>
+<span class="style-br">.</span><br>
+Sprawdźmy, jak to wygląda graficznie.<br>
+<br>
+<hr>
+Zakres migracji pasma filtra zastosowany na animacjach nie jest przypadkowy i jest właściwy dla kątów skrajnych promieni światła przy f&#47;8, f&#47;4, f&#47;2.<br>
+<hr>
+<br>
+<b>| 0&#176; |</b><br>
+<span class="style-br">.</span><br>
+Gdy filtr jest umieszczony prostopadle do osi optycznej, czyli jest odchylony o kąt 0&#176; od prostopadłości względem optycznej teleskopu ...<br>
+<span class="style-br">.</span><br>
+<div align="center"><img src="./images/Basics_Filtry/BST-40-rays-anim.gif" border="0" alt=""></div>
+<br>
+... wtedy:<br>
+<span class="style-br">.</span><br>
+- stożek f&#47;8 obsługuje promienie światła do 3.6&#176;<br>
+- stożek f&#47;4 obsługuje promienie światła do 7.1&#176;<br>
+- stożek f&#47;2 obsługuje promienie światła do 14&#176;<br>
+<br>
+... wtedy przykładowa suma odchyleń kątów f&#47;2+f&#47;4+f&#47;8+0+f&#47;8+f&#47;4+f&#47;2 dla osi x filtra od prostopadłości wynosi: <b>49,44&#176;</b>.<br>
+<span class="style-br">.</span><br>
+<div align="center"><img src="./images/Basics_Filtry/BST-40-anim.gif" border="0" alt=""></div>
+<br>
+Zakres pracy filtra wynosi od <b>0&#176;</b> do <b>14&#176;</b> ...<br>
+<br>
+... co skutkuje niniejszym przesunięciem Blueshift.<br>
+<span class="style-br">.</span><br>
+<div align="center"><img src="./images/Basics_Filtry/BST-41-anim.gif" border="0" alt=""></div>
+<br>
+<b>| 7&#176; | <span class="style-arrow">&#8631;</span> |</b><br>
+<span class="style-br">.</span><br>
+Gdy filtr jest odchylony o kąt 7&#176; od prostopadłości względem osi optycznej teleskopu ...<br>
+<span class="style-br">.</span><br>
+<div align="center"><img src="./images/Basics_Filtry/BST-42-rays-anim.gif" border="0" alt=""></div>
+<br>
+... wtedy przykładowa suma odchyleń kątów f&#47;2+f&#47;4+f&#47;8+0+f&#47;8+f&#47;4+f&#47;2 dla osi x filtra od prostopadłości wynosi: <b>63,66&#176;</b>.<br>
+<br>
+<div align="center"><img src="./images/Basics_Filtry/BST-42-anim.gif" border="0" alt=""></div>
+<br>
+Zakres pracy filtra wynosi od <b>0&#176;</b> do <b>21&#176;</b> ...<br>
+<br>
+... co skutkuje niniejszym przesunięciem Blueshift.<br>
+<span class="style-br">.</span><br>
+<div align="center"><img src="./images/Basics_Filtry/BST-43-anim.gif" border="0" alt=""></div>
+<br>
+- W takim razie, trzeba dać większy kąt!<br> 
+Taka padła propozycja z tłumu.<br>
+<span class="style-br">.</span><br>
+- Dobrze, sprawdźmy.<br>
+<br>
+
+<b>| 14&#176; | <span class="style-arrow">&#8631;</span> |</b><br>
+<span class="style-br">.</span><br>
+Gdy filtr jest odchylony o kąt 14&#176; od prostopadłości względem osi optycznej teleskopu ...<br>
+<span class="style-br">.</span><br>
+<div align="center"><img src="./images/Basics_Filtry/BST-44-rays-anim.gif" border="0" alt=""></div>
+<br>
+... wtedy przykładowa suma odchyleń kątów f&#47;2+f&#47;4+f&#47;8+0+f&#47;8+f&#47;4+f&#47;2 dla osi x filtra od prostopadłości wynosi: <b>98,21&#176;</b>.<br>
+<br>
+<div align="center"><img src="./images/Basics_Filtry/BST-44-anim.gif" border="0" alt=""></div>
+<br>
+Zakres pracy filtra wynosi od <b>0&#176;</b> do <b>28&#176;</b> ...<br>
+<br>
+... co skutkuje niniejszym przesunięciem Blueshift.<br>
+<span class="style-br">.</span><br>
+<div align="center"><img src="./images/Basics_Filtry/BST-45-anim.gif" border="0" alt=""></div>
+<span class="style-br">.</span><br>
+Pomogło? Zdecydowanie pogorszyło!<br>
+<br>
+- A bo to trzeba spróbować w drugą stronę !<br> 
+Rzucił ktoś przenikliwy :)<br>
+<span class="style-br">.</span><br>
+- OK, nie ma sprawy.<br>
+<span class="style-br">.</span><br>
+<b>| 14&#176; | <span class="style-arrow">&#8630;</span> | </b><br>
+<span class="style-br">.</span><br>
+<div align="center"><img src="./images/Basics_Filtry/BST-46-rays-anim.gif" border="0" alt=""></div>
+<br>
+Tyle że kierunek odchylenia nie ma znaczenia, zakres pracy filtra nadal wynosi od <b>0&#176;</b> do <b>28&#176;</b>.<br>
+<br>
+<span class="style-br">.</span><br>
+<div align="center"><img src="./images/Basics_Filtry/BST-46-anim.gif" border="0" alt=""></div>
+<br>
+Nadal przykładowa suma odchyleń kątów f&#47;2+f&#47;4+f&#47;8+0+f&#47;8+f&#47;4+f&#47;2 dla osi x filtra od prostopadłości wynosi: <b>98,21&#176;</b>.<br>
+<br>
+<div align="center"><img src="./images/Basics_Filtry/BST-47-anim.gif" border="0" alt=""></div>
+<br>
+Jeśli dodać całą płaszczyznę filtra, sprawa staje się jeszcze bardziej skomplikowana, ale już powyższe próbkowanie w najbardziej odchylonej osi filtra dostatecznie obrazuje nam absurdalność całego zamysłu.<br>
+<br>
+<hr>
+<br>
+Na koniec...<br>
+<span class="style-br">.</span><br>
+Prezentowana powyżej grafika dla lepszego zrozumienia musiała zawierać wiele uproszczeń, jednak temat jest jeszcze bardziej zawiły.<br>
+<span class="style-br">.</span><br>
+Gdy fotografujemy np. małą mgławicę planetarną ...<br>
+<span class="style-br">.</span><br>
+<div align="center"><img src="./images/Basics_Filtry/BST-50.png" border="0" alt=""></div>
+<br>
+... to droga światła obiektyw-sensor nie wygląda tak ...<br>
+<span class="style-br">.</span><br>
+<div align="center"><img src="./images/Basics_Filtry/BST-51.png" border="0" alt=""></div>
+<br>
+... lecz tak ...<br>
+<span class="style-br">.</span><br>
+<div align="center"><img src="./images/Basics_Filtry/BST-52.png" border="0" alt=""></div>
+<br>
+... a to sprawia, że wszystko komplikuje się nam jeszcze bardziej, zwłaszcza gdy chodzi o kąt padania promieni światła na filtr.<br>
+Jak nam wiadomo, każdy fragment obiektywu pracuje na każdy fragment obrazu, a to oznacza, że możliwy jest każdy dowolny promień w obrębie przestrzeni obiektyw-sensor.<br>
+<span class="style-br">.</span><br>
+<div align="center"><img src="./images/Basics_Filtry/BST-53.png" border="0" alt=""></div>
+<br>
+No ale może chociaż w tym miejscu wiązka światła pada zawsze na filtr prostopadle? Prawda?<br>
+<span class="style-br">.</span><br>
+<div align="center"><img src="./images/Basics_Filtry/BST-54.png" border="0" alt=""></div>
+<br>
+No, niekoniecznie ...<br>
+<span class="style-br">.</span><br>
+<div align="center"><img src="./images/Basics_Filtry/BST-55.png" border="0" alt=""></div>
+<br>
+Gdyby teraz zbadać każde miejsce na filtrze ...<br>
+<br>
+Widzieć należy także, że Blueshift zależny jest od długości fali światła, im jest ona dłuższa, tym jest większy. Nadto, na animacjach, dla uproszczenia, charakterystyki filtrów (kształt), migrowały niezaburzone w pełnej krasie, lecz w rzeczywistości, ulegają one niekorzystnym zmianom, tak czy inaczej, mam nadzieję, że niniejszy opis pomoże Wam zrozumieć podstawy niniejszego zagadnienia.<br>
+<br>
+
+
+<a href="#WD" ><span class="style-link">WRÓĆ DO WYKAZU DZIAŁÓW &#10148;</span></a><br>
+
+
+<br>
+<br>
+<div align="center">
+
+<span class="style-prop">MOGĄ CIĘ ZAINTERESOWAĆ RÓWNIEŻ</span><br>
+<hr style="border: 0px; background: #66FFFF; height: 2px;">
+
+<a href="Czyszczenie_Filtrow_Optycznych_Astronomicznych.html">
+<picture>
+  <source media="(max-width: 1080px)" srcset="images/MCZR/Czyszczenie_Filtrow_Optycznych_Astronomicznych_xl.png">
+  <img src="images/MCZR/Czyszczenie_Filtrow_Optycznych_Astronomicznych_s.png" alt="">
+</picture>
+</a><a href="Basics_Kamery.html">
+<picture>
+  <source media="(max-width: 1080px)" srcset="images/MCZR/Basics_Kamery_xl.png">
+  <img src="images/MCZR/Basics_Kamery_s.png" alt="">
+</picture>
+</a><a href="Spectrum.html">
+<picture>
+  <source media="(max-width: 1080px)" srcset="images/MCZR/Spectrum_xl.png">
+  <img src="images/MCZR/Spectrum_s.png" alt="">
+</picture>
+</a><a href="SLOAN.html">
+<picture>
+  <source media="(max-width: 1080px)" srcset="images/MCZR/SLOAN_xl.png">
+  <img src="images/MCZR/SLOAN_s.png" alt="">
+</picture>
+</a>
+
+<hr style="border: 0px; background: #66FFFF; height: 2px;">
+</div>
+<br>
+<br>
+</span>
+
+<div align="center">
+<a href="index.html">
+<picture>
+  <source media="(max-width: 1080px)" srcset="images/Astrofotografia-xl.png">
+  <img src="images/Astrofotografia.png" alt="Astrofotografia">
+</picture>
+</a>
+</div>
+
+<br>
+
+</td>
+</tr>
+</table>
+
+</td>
+</tr>
+<tr><td width="100%" height="1" bgcolor="#000000"></td></tr>
+<tr><td width="100%" height="2" bgcolor="#FFD135"></td></tr>
+<tr>
+<td width="100%" height="36" align="center" bgcolor="#2D303A">
+<div style="position: absolute;"><a href="https://info.flagcounter.com/RpsC"><img src="https://s01.flagcounter.com/mini/RpsC/bg_848792/txt_666666/border_848792/flags_0/" alt="Flag Counter" border="0"></a></div>
+<div style="position: absolute;"><img src="images/FCH1.png" alt="" border="0"></div>
+<span class="style-stopka">&copy;Copyright 2021-2023 HAMAL</span><br>
+</td>
+</tr>
+</table>
+
+</body>
+</html>
