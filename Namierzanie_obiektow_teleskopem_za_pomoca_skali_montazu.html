@@ -1,0 +1,476 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="description" content="Namierzanie obiektów astronomicznych na niebie teleskopem za pomocą skali montażu paralaktycznego i programu Stellarium.">
+<meta name="keywords" content="namierzać, obiekty, teleskop, montaż, skale, hamal">
+<title>NAMIERZANIE TELESKOPEM OBIEKTÓW NA NIEBIE ZA POMOCĄ SKALI MONTAŻU - HAMAL</title>
+<meta name="robots" content="index,follow">
+<link rel="shortcut icon" href="logo.ico">
+
+<style type="text/css">
+<!--
+body {
+	margin-left: 0px;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+	background-color: #2D303A;
+}
+.style1 {
+	color: #222429;
+	font-family: Verdana;
+	font-size: 14px;
+}
+.style-dzial {
+	color: #FFFFFF;
+	font-family: Arial;
+	font-size:20px;
+	letter-spacing:1.0pt;
+}
+.style-link {
+	color: #CFD1D6;
+	font-family: Verdana;
+	font-size: 14px;
+}
+.style-Hbr {
+	color: #2D303A;
+	font-family: Verdana;
+	font-size: 4px;
+}
+.style-br {
+	color: #858893;
+	font-family: Verdana;
+	font-size: 3px;
+}
+.style-prop {
+	color: #66FFFF;
+	font-family: Verdana;
+	font-size: 14px;
+	letter-spacing:3.0pt
+}
+.style-stopka {
+	color: #B3B6BD;
+	font-family: Arial;
+	font-size: 10px;
+	letter-spacing:4.0pt
+}
+
+a:link {
+	text-decoration: none;
+}
+a:visited {
+	text-decoration: none;
+}
+a:hover {
+	text-decoration: none;
+}
+a:active {
+	text-decoration: none;
+}
+-->
+</style>
+
+</head>
+<body>
+
+<table width="100%" border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td width="100%" height="120" align="center" bgcolor="#2D303A">
+<span style='font-size:24.0pt;font-family:"Book antiqua";color:#B3B6BD;letter-spacing:0.0pt'>Namierzanie obiektów astronomicznych na niebie teleskopem<br>za pomocą skali montażu paralaktycznego i programu Stellarium</span>
+</td>
+</tr>
+<tr><td width="100%" height="2" bgcolor="#FFD135"></td></tr>
+<tr><td width="100%" height="1" bgcolor="#000000"></td></tr>
+<tr>
+<td width="100%" align="center" bgcolor="#858893">
+
+ 
+
+<table border="0" cellpadding="20" cellspacing="0">
+<tr>
+<td width="960" style="text-align: justify">
+<span class="style1">
+&nbsp; &nbsp; <strong>WSTĘP</strong><br>
+<span class="style-br">.</span><br>
+I amator i doświadczony adept astrohobby w czasie sesji pod niebem mają nieustannie jedno zadanie, a mianowicie wycelować teleskopem w obiekt, który pragną obecnie oglądać. Posiadając teleskop z funkcją GoTo sprawa jest prosta, bo wystarczy za pomocą pilota, bądź komputera, dokonać wyboru obiektu, dać czas automatyce na wycelowanie i już można się cieszyć jego podziwianiem. Sprawa ma się inaczej gdy nie posiadamy takiego systemu, jesteśmy wtedy zdani na manualne ustawienie teleskopu, posiłkując się przy tym mapami nieba. Najczęściej wygląda to tak, że upatrujemy sobie tuż obok naszego celu na mapie jakąś jasną gwiazdę, szukaczem teleskopu celujemy w rzeczoną gwiazdę, a potem, już patrząc w szerokokątny okular umieszczony w wyciągu okularowym, stosując małe powiększenie z mapą w ręku, przeskakujemy po gwiazdach i charakterystycznych ich układach, od jednych do drugich, próbując się nie zgubić, aż po pewnym czasie docieramy do upragnionego celu. Ta technika ma zaletę, gdyż uczy nas nieba, położenia obiektów i samodzielnego trafiania w nie, jednak wadą jej jest długi czas obsługi, co przy skromnej ilości pogodnego nieba, lub długiej liście urozmaiconych jednorazowych celów sprawia, że znaczna część czasu zostanie przeznaczona na namierzanie, a nie pracę na obiektach. Jednakże to nie musi tak wyglądać, bo istnieje dużo szybsza i łatwiejsza metoda pośrednia, stosuję ją od lat z doskonałym skutkiem i chciałem Was tu do niej zachęcić. Polega ona na wykorzystaniu skali osi Rektascensji (Ra) oraz Deklinacji (Dec) naszego montażu, oraz chwilowych parametrów obiektów podawanych nam na bieżąco przez program Stellarium.<br>
+To tak w skrócie, ale zanim przejdziemy do szczegółów, jeszcze mała dygresja...<br>
+<br>
+Wszystko, co tu opiszę, może wydawać się Wam trudne, jednak gwarantuje, że z czasem, gdy nabierzecie wprawy, opisane tu zagadnienia wydadzą Wam się tak banalne, że będziecie się śmiać z początkowych trudności z ich opanowania, a uwierzcie mi, że naprawdę warto. :)<br>
+<br>
+Nadto przywołana tu metoda znajduje doskonałe zastosowanie przy celowaniu w dzień w planety i jasne gwiazdy, Wenus, Merkury, czy Capella, ukryte w błękicie nieba, przy braku punktów odniesienia, przestaną być dla Was nieuchwytne. :)<br>
+<br>
+<br>
+A tak w ogóle, zanim się zniechęcisz, czytając opracowanie po kolei, przejdź na chwilę <a href="#3" ><span class="style-link"><u>TU</u></span></a> i przeczytaj sam dział CELOWANIE W OBIEKTY, zajmie Ci to chwilkę.<br>
+<br>
+<br>
+<hr style="border: 0px; background: #FFCC00; height: 3px;"><a name="WD"></a>
+<span class="style-br">.</span><br>
+<span class="style-br">.</span><br>
+Opracowanie podzieliłem na kilka podstawowych działów, kliknij stosowną nazwę, aby zostać przeniesionym do interesującej Cię sekcji.<br>
+<span class="style-br">.</span><br>
+<span class="style-br">.</span><br>
+<a href="#1" ><span class="style-link">&#10148; SKALE MONTAŻU</span></a><br>
+<a href="#2" ><span class="style-link">&#10148; ZGRANIE SKALI MONTAŻU Z NIEBEM</span></a><br>
+<a href="#3" ><span class="style-link">&#10148; CELOWANIE W OBIEKTY</span></a><br>
+<a href="#4" ><span class="style-link">&#10148; ZGRANIE OKULARU NAMIERZAJĄCEGO I STELLARIUM</span></a><br>
+<a href="#5" ><span class="style-link">&#10148; OGRANICZENIE WIELKOŚCI GWIAZDOWEJ</span></a><br>
+<span class="style-br">.</span><br>
+<hr style="border: 0px; background: #FFCC00; height: 3px;"><a name="1"></a>
+<br>
+<br>
+
+
+<span class="style-dzial">&#10074; SKALE MONTAŻU</span><br>
+<span class="style-br">.</span><br>
+Montaże paralaktyczne posiadają na osi Ra oraz osi Dec pierścienie ze skalą. Oś Ra posiada skalę godzinową, oś Dec posiada skalę w stopniach. Pierścienie te nie znajdują się tam dla ozdoby, warto je wykorzystać do naszych celów, aby jednak to nastąpiło, musimy je odpowiednio ustawić, by potem stać się beneficjentami korzyści z poświęconego na to czasu, i sumą zaoszczędzonych godzin, traconych dawniej na celowanie w obiekty z mapą, spłacić z nawiązką po stokroć czas na tę procedurę poświęcony.<br>
+<span class="style-br">.</span><br>
+<span class="style-br">.</span><br>
+<br>
+<img src="images/Namierzanie_obiektow_teleskopem_za_pomoca_skali_montazu/CWONNZPSM_00.jpg" border="0" alt=""><br>
+<br>
+<br>
+Skala osi Ra podzielona jest na 24 godziny. Dlaczego? A no dlatego, że gdyby ustawić prawidłowo montaż, wycelować go w jakąś gwiazdę i uruchomić napęd osi Ra, to montaż śledząc gwiazdę, po dobie (24h), zatoczyłby koło i wrócił w to samo miejsce. Każda godzina jest podzielona kreskami co 10 minut. Biorąc za przykład poniższe zdjęcie, po 10 minutach, podziałka względem wskazu na korpusie montażu przesunęłaby się o jedną podziałkę. Jak widzicie, jest godzina 0 (północ - 24), potem dwie krótsze kreski po 10 minut każda, potem jest dłuższa jako 30 minut, potem znowu dwie krótsze jako 40 i 50 minut, i znowu duża, opisana jako 1, i dalej 2, 3, odmierzone godziny.<br>
+<br>
+<img src="images/Namierzanie_obiektow_teleskopem_za_pomoca_skali_montazu/CWONNZPSM_01.jpg" border="0" alt=""><br>
+<br>
+Aby było jeszcze trudniej, na pierścieniu są dwa przeciwstawne rzędy cyfr, skąd więc wiadomo, którym się posługiwać? Ważne jest, aby odczytywać wartość rosnącą, gdy teleskop po poluzowaniu osi Ra popchniemy zgodnie z ruchem wskazówek zegara. Wskaz winien wtedy wskazywać godzinę 0, potem 1, potem 2. A dlaczego pierścień posiada dwa przeciwstawne rzędy cyfr? Skale są uniwersalne, fani astronomii żyją na północnej, oraz na południowej półkuli Ziemi. W Australii (do góry nogami), teleskop porusza się za niebem w lewą stronę (przeciwnie do ruchu wskazówek zegara) i bazuje się na wskazaniach przeciwnych. Tak czy inaczej, żyjemy na półkuli północnej, i przy obrocie teleskopu w prawo, korzystamy ze skali rosnącej. Jeśli macie ochotę, możecie dla ułatwienia niepotrzebne cyfry skali zakleić paskiem czarnej taśmy.<br>
+<br>
+<br>
+Dla odmiany skala osi Dec to stopnie. Cyfra 9 to 90&#176;, czyli góra nieboskłonu paralaktycznego.<br>
+<br>
+<img src="images/Namierzanie_obiektow_teleskopem_za_pomoca_skali_montazu/CWONNZPSM_02.jpg" border="0" alt=""><br>
+<br>
+<br>
+Cyfra 0 na skali Dec to równik niebieski, nie mylić z horyzontem azymutalnym. Cyfry 1,2,3,4... to 10&#176;, 20&#176;, 30&#176;, 40&#176;...<br> 
+<br>
+<img src="images/Namierzanie_obiektow_teleskopem_za_pomoca_skali_montazu/CWONNZPSM_03.jpg" border="0" alt=""><br>
+<br>
+Jak zapewne zauważyliście, cyfry od 0 rosną 1,2,3,4... w obie strony. To, czego tu nie widać, to fakt, iż tak naprawdę zależnie od miejsca użytkowania montażu (półkula północna - półkula południowa), oraz <a href="images/Namierzanie_obiektow_teleskopem_za_pomoca_skali_montazu/MeridianFlip.png" target="_blank"><span class="style-link"><u>strony</u></span></a>, po której znajduje się teleskop, mamy do czynienia z ...-4,-3,-2,-1,0,1,2,3,4... lub ...4,3,2,1,0,-1,-2,-3,-4... choć tak naprawdę, to jak pisałem już wyżej, mamy do czynienia z  ... -40,-30,-20,-10,0,10,20,30,40... lub ...40,30,20,10,0,-10,-20,-30,-40... stopni. Dlaczego więc skala Dec nie posiada opisanych wartości minus i dziesiętnych? Ponownie, z uwagi na konieczność jej uniwersalności. Więcej zamieszania, by wynikło, z próby upakowania na niej minusów i dziesiątek, niż w przypadku zdania się na domyślność użytkownika, w którym zakresie obecnie pracuje.<br>
+<br>
+Ciekawostka.<br>
+<span class="style-br">.</span><br>
+U nas (w Polsce, leżącej na szerokości geograficznej 49&#176;-55&#176;) "zenit" w paralaktycznej skali to +50&#176; +55&#176; a horyzont w kierunku południowym to -35&#176; -40&#176; deklinacji.<br>
+Poszukując więc, na mapie nieba, celów znajdujących się jak najwyżej nad głową, szukamy obiektów o deklinacji +50&#176; +55&#176;, a chcąc się zmierzyć z obiektami na niebie (w kierunku południowym) znajdującymi się na wysokości krzaka porzeczek, szukamy obiektów o deklinacji od -35&#176; do -40&#176;. Dla odmiany, przy mierze Azymutalnej byśmy szukali czegoś między 0&#176;, a +5&#176;, gdzie 0&#176; to horyzont.<br>
+<br>
+Tyle teorii, pora nastawić pierścienie. :)<br>
+<br>
+<a href="#WD" ><span class="style-link">WRÓĆ DO WYKAZU DZIAŁÓW &#10148;</span></a><br>
+<br>
+<hr style="border: 0px; background: #FFCC00; height: 3px;"><a name="2"></a>
+<br>
+<br>
+
+
+
+
+
+<span class="style-dzial">&#10074; ZGRANIE SKALI MONTAŻU Z NIEBEM</span><br>
+<br>
+1. Ustawienie montażu.<br>
+<span class="style-br">.</span><br>
+Montaż, cały jako taki, musi zawsze być ustawiony identycznie, a osią Ra winien celować w Gwiazdę Polarną. Jeśli posiadamy lunetkę biegunową, sprawa jest prosta, jeśli takowej nie posiadamy, montaż ustawiamy metodą Dryfu, lub moją metodą <a href="Metoda_semi_dryfu.html" target="_blank"><span class="style-link"><u>semi Dryfu</u></span></a>, oznaczamy na podłodze (balkonu, tarasu) miejsca, w których stoją nogi montażu, oznaczamy na montażu długość wysuwu nóg, dzięki czemu, w przyszłości, będziemy mogli to, co teraz wypracujemy odtwarzać błyskawicznie.<br>
+<span class="style-br">.</span><br>
+<span class="style-br">.</span><br>
+2. Ustawienie pierścieni skali Ra i Dec.<br>
+<span class="style-br">.</span><br>
+Gdy montaż mamy już dobrze wycelowany w biegun możemy przystąpić do nastawienia pierścieni skali montażu, bo zauważcie, że one nie są osadzone na stałe, zazwyczaj ze sporym oporem, ale się obracają. Gdy są czymś blokowane, blokadę trzeba na czas nastawiania poluzować.<br>
+Przy pomocy szukacza teleskopu celujemy w jakąś znaną nam jasną gwiazdę (znajdującą się nie za wysoko, nie za nisko), następnie, zaglądamy do programu Stellarium i podpatrujemy dane tej gwiazdy na tę chwilę (oczywiście w Stellarium musi być wybrana nasza lokalizacja obserwacji - skrót F6).<br>
+<br>
+Dla przykładu posłużymy się Aldebaranem.<br>
+<br>
+Stellarium podaje:<br>
+<b>RA/Dekl (J2000.0): 4h35m55.34s/+16&#176;30'29.3"</b> co nam mówi, że ten obiekt na mapie nieba leży w miejscu o współrzędnych Ra 4h35m55.34s i Dec +16&#176;30'29.3" ale ta informacja do naszych celów jest zupełnie nieprzydatna. <br>
+<br>
+Nas interesuje linijka niżej, tj.:<br>
+<b>Kąt godz./Dekl.:23h05m02.93s/+16&#176;33'03.2"</b> Tego szukaliśmy, tego potrzebujemy, za każdym razem,  gdy posługujemy się niniejszą metodą. Łatwiej zapamiętać, iż nas interesuje ta linijka, w której zmieniają się cyferki. A dlaczego w jednej się zmieniają, a w drugiej nie? Ta nieruchoma linijka, to współrzędne z mapy, one są "stałe", gdyż położenie obiektów w kosmosie nie zmienia się... no dobra... zmienia się, ale bardzo powoli, a ta druga linijka, pokazuje obiekty w czasie rzeczywistym względem obracającej się ziemi, więc gdy teraz pokazuje 22h i 20 min, to za 10 minut musi pokazywać 22h i 30 min, a za kolejną godzinę 23h 30min.<br>
+<br>
+<img src="images/Namierzanie_obiektow_teleskopem_za_pomoca_skali_montazu/CWONNZPSM_1.png" border="0" alt=""><br>
+<br>
+Wycelowaliśmy więc szukaczem w Aldebarana, potem patrząc w okular umieszczony w wyciągu okularowym, doprecyzowujemy jego trafienie, następnie udajemy się do pierścieni skali Ra i Dec, aby nastawić wskazane przez Stellarium chwilowe parametry obiektu.<br>
+Kręcimy pierścieniem osi Ra tak długo, aż strzałka (zawsze na montażu przy skalach jest jakiś wskaz, strzałka, kreska, kropka, gdy nie ma, to trzeba ją dorobić) wyceluje nam w wartość godzina 23 i minut 10. Oczywiście, kręcenia pierścieniem może być znacznie więcej niż na poglądowej animacji poniżej.<br>
+<br>
+<img src="images/Namierzanie_obiektow_teleskopem_za_pomoca_skali_montazu/CWONNZPSM_001.gif" border="0" alt=""><br>
+<br>
+Przechodzimy teraz do pierścienia osi Dec. Kręcimy nim tak długo, aż strzałka wyceluje nam w wartość 16,5 stopni.<br>
+Oczywiście, kręcenia pierścieniem może być znacznie więcej niż na poglądowej animacji poniżej.<br>
+<br>
+<img src="images/Namierzanie_obiektow_teleskopem_za_pomoca_skali_montazu/CWONNZPSM_002.gif" border="0" alt=""><br>
+<br>
+Proszę Państwa! Gotowe! To wszystko! Sprzęt jest dostrojony, przechodzimy do błyskawicznego celowania w obiekty. :)<br>
+<br>
+W międzyczasie, poglądowo, przykładowe nastawy osi Ra, gdy kręcimy już montażem z teleskopem. Obrazki do analizy na spokojnie <a href="images/Namierzanie_obiektow_teleskopem_za_pomoca_skali_montazu/CWONNZPSM.html" target="_blank"><span class="style-link"><u>TU</u></span></a>.<br><br>
+<img src="images/Namierzanie_obiektow_teleskopem_za_pomoca_skali_montazu/CWONNZPSM_003.gif" border="0" alt=""><br>
+<br>
+<a href="#WD" ><span class="style-link">WRÓĆ DO WYKAZU DZIAŁÓW &#10148;</span></a><br>
+<br>
+<hr style="border: 0px; background: #FFCC00; height: 3px;"><a name="3"></a>
+<br>
+<br>
+
+
+
+
+
+<span class="style-dzial">&#10074; CELOWANIE W OBIEKTY</span><br>
+<br>
+Wybieramy sobie jakiś obiekt, np. Messier 1, w Stellarium, w szukaj, wpisujemy: M1, wciskamy Enter, i już po chwili mamy...<br>
+<br>
+<img src="images/Namierzanie_obiektow_teleskopem_za_pomoca_skali_montazu/CWONNZPSM_2.png" border="0" alt=""><br>
+<br>
+... Stellarium podaje nam: <b>Kąt godz./Dekl.:22h06m21.98s/+22&#176;01'42.8"</b>, a to oznacza, że wystarczy teleskop ustawić tak, by wskaz na skali pierścienia osi Ra wskazywał wartość 22godz. 6min. oraz by wskaz na skali pierścienia osi Dec wskazywał wartość +22&#176;, aby już po chwili, w okularze, cieszyć się widokiem Mgławicy Krab Messier 1 :)<br>
+<br>
+No to może... dla odmiany... gromada Messier 38? :D &nbsp;  W Stellarium, w Szukaj, wpisujemy: M38, wciskamy Enter, i już po chwili mamy...<br>
+<br>
+<img src="images/Namierzanie_obiektow_teleskopem_za_pomoca_skali_montazu/CWONNZPSM_3.png" border="0" alt=""><br>
+<br>
+... Stellarium podaje nam: <b>Kąt godz./Dekl.:22h12m02.00s/+35&#176;52'19.2"</b>, teraz wystarczy teleskop ustawić tak, by wskaz na skali pierścienia osi Ra wskazywał wartość  22godz. 12min. oraz by wskaz na skali pierścienia osi Dec wskazywał wartość +36&#176;, aby już po chwili, w okularze, cieszyć się widokiem gromady Messier 38 :)<br>
+<br>
+Jak widzicie, sprawa warta jest początkowego zachodu. :)<br>
+<br>
+Oczywistym jest, że w chwili celowania, w wyciągu okularowym posiadamy okular o największym polu widzenia i najmniejszym powiększeniu, ponieważ, w zależności od dokładności ustawienia naszego montażu, oraz dokładności samego montażu, celując w obiekty, może się zdażyć, że będą one na samym środku pola widzenia okularu, jednak najczęściej jest tak, że są one gdzieś na obrzeżach, lub znajdują się tuż poza polem widzenia, należy wtedy, za pomocą mapy, rozpoznać przylegający do obiektu układ gwiazd i doprecyzować trafienie.<br>
+<br>
+<a href="#WD" ><span class="style-link">WRÓĆ DO WYKAZU DZIAŁÓW &#10148;</span></a><br>
+<br>
+<hr style="border: 0px; background: #FFCC00; height: 3px;"><a name="4"></a>
+<br>
+<br>
+
+
+
+
+
+<span class="style-dzial">&#10074; ZGRANIE OKULARU NAMIERZAJĄCEGO I STELLARIUM</span><br>
+<br>
+Istnieje jeszcze jeden aspekt, który niebywale ułatwi nam celowanie w obiekty i polega on na stworzeniu w Stellarium odpowiednika naszego okularu celowniczego.<br>
+Gdy w okularze teleskopu widzimy odzwierciedlenie obrazu z ekranu, jest nam o wiele łatwiej rozpoznać układ gwiazd.<br>
+<br>
+Niektóre grafiki zostały rozjaśnione dla lepszego kontrastu.<br>
+<br>
+W Stellarium istnieje opcja utworzenia okularu i wizualizacji obrazu w nim widzianego, co nam pozwoli stworzyć odpowiednik naszego okularu, którym po wycelowaniu za pomocą skali montażu poszukujemy obiektu.<br>
+<br>
+Owo zgranie najlepiej przeprowadzić na obiekcie typu M45 lub podobnym, grunt, aby w rejonie znajdowało się wiele gęsto upakowanych jasnych gwiazd, które pozwolą nam łatwo rozpoznać to, co widzimy na ekranie i w okularze teleskopu.<br>
+<span class="style-br">.</span><br>
+<img src="images/Namierzanie_obiektow_teleskopem_za_pomoca_skali_montazu/CWONNZPSMx_01.jpg" border="0" alt=""><br>
+<br>
+<br>
+Owo zgranie najlepiej przeprowadzić na obiekcie typu M45 lub podobnym, grunt, aby w rejonie znajdowało się wiele gęsto upakowanych jasnych gwiazd, które pozwolą nam łatwo rozpoznać to, co widzimy na ekranie i w okularze teleskopu.<br>
+<span class="style-br">.</span><br>
+<img src="images/Namierzanie_obiektow_teleskopem_za_pomoca_skali_montazu/CWONNZPSMx_02.jpg" border="0" alt=""><br>
+<br>
+<br>
+Owo zgranie najlepiej przeprowadzić na obiekcie typu M45 lub podobnym, grunt, aby w rejonie znajdowało się wiele gęsto upakowanych jasnych gwiazd, które pozwolą nam łatwo rozpoznać to, co widzimy na ekranie i w okularze teleskopu.<br>
+<span class="style-br">.</span><br>
+<img src="images/Namierzanie_obiektow_teleskopem_za_pomoca_skali_montazu/CWONNZPSMx_03.jpg" border="0" alt=""><br>
+<br>
+<br>
+Owo zgranie najlepiej przeprowadzić na obiekcie typu M45 lub podobnym, grunt, aby w rejonie znajdowało się wiele gęsto upakowanych jasnych gwiazd, które pozwolą nam łatwo rozpoznać to, co widzimy na ekranie i w okularze teleskopu.<br>
+<span class="style-br">.</span><br>
+<img src="images/Namierzanie_obiektow_teleskopem_za_pomoca_skali_montazu/CWONNZPSMx_04.jpg" border="0" alt=""><br>
+<br>
+<br>
+<br>
+Jak taki okular w Stellarium utworzyć?<br>
+<br>
+W celu utworzenia okularu otwieramy na lewo OKNO KONFIGURACJI, w nim WTYCZKI tam OKULARY, zaznaczamy ZAŁADUJ PRZY URUCHOMIENIU PROGRAMU i uruchamiamy na nowo program.<br>
+Wtedy aktywne stanie się KONFIGURUJ.<br>
+<span class="style-br">.</span><br>
+<img src="images/Namierzanie_obiektow_teleskopem_za_pomoca_skali_montazu/CWONNZPSMx_05.jpg" border="0" alt=""><br>
+<br>
+<br>
+W konfiguracji w zakładce OGÓLNE wybieramy POKAŻ PRZYCISK OKULARÓW NA PASKU NARZĘDZI oraz pozostałe oznaczone opcje.<br>
+<span class="style-br">.</span><br>
+<img src="images/Namierzanie_obiektow_teleskopem_za_pomoca_skali_montazu/CWONNZPSMx_06.jpg" border="0" alt=""><br>
+<br>
+<br>
+Następnie przechodzimy do zakładki TELESKOPY i wprowadzamy parametry naszego teleskopu oraz zaznaczamy zaznaczone opcje.<br>
+<span class="style-br">.</span><br>
+<img src="images/Namierzanie_obiektow_teleskopem_za_pomoca_skali_montazu/CWONNZPSMx_10.jpg" border="0" alt=""><br>
+<br>
+<br>
+Następnie w zakładce OKULARY, pod niebem lub z pamięci, tak dobieramy parametry naszego okularu celowniczego, aby po kliknięciu WIDOK W OKULARZE obraz widziany w okularze w teleskopie odpowiadał dokładnie temu, co pokazuje Stellarium.<br>
+<span class="style-br">.</span><br>
+<img src="images/Namierzanie_obiektow_teleskopem_za_pomoca_skali_montazu/CWONNZPSMx_07.jpg" border="0" alt=""><br>
+<br>
+<br>
+Pozostałych zakładek nie wypełniamy.<br>
+<span class="style-br">.</span><br>
+<img src="images/Namierzanie_obiektow_teleskopem_za_pomoca_skali_montazu/CWONNZPSMx_08.jpg" border="0" alt=""><br>
+<br>
+<br>
+Pozostałych zakładek nie wypełniamy.<br>
+<span class="style-br">.</span><br>
+<img src="images/Namierzanie_obiektow_teleskopem_za_pomoca_skali_montazu/CWONNZPSMx_09.jpg" border="0" alt=""><br>
+<br>
+<br>
+Pozostałych zakładek nie wypełniamy.<br>
+<span class="style-br">.</span><br>
+<img src="images/Namierzanie_obiektow_teleskopem_za_pomoca_skali_montazu/CWONNZPSMx_11.jpg" border="0" alt=""><br>
+<br>
+<br>
+Ja lubię przycisk okularu mieć na dole w PASKU NARZĘDZI, ale istnieje też opcja, aby mieć go w prawym górnym rogu, co pozwala mieć szybszy dostęp do konfiguracji.<br>
+Aby to uzyskać, wystarczy zamiast POKAŻ PRZYCISK OKULARÓW NA PASKU NARZĘDZI, wybrać WYŚWIETL PANEL STEROWANIA.<br>
+<span class="style-br">.</span><br>
+<img src="images/Namierzanie_obiektow_teleskopem_za_pomoca_skali_montazu/CWONNZPSMx_12.jpg" border="0" alt=""><br>
+<br>
+<br>
+Gotowe, mamy PANEL STEROWANIA w prawym górnym rogu.<br>
+<span class="style-br">.</span><br>
+<img src="images/Namierzanie_obiektow_teleskopem_za_pomoca_skali_montazu/CWONNZPSMx_13.jpg" border="0" alt=""><br>
+<br>
+<br>
+<br>
+Gdy mamy już wszystko skonfigurowane możemy przejść do korzystania z funkcji :D<br>
+<br>
+<br>
+<br>
+Wpiszmy więc w OKNO WYSZUKIWANIA mgławicę Eskimos, czyli NGC 2392. Enter.<br>
+<span class="style-br">.</span><br>
+<img src="images/Namierzanie_obiektow_teleskopem_za_pomoca_skali_montazu/CWONNZPSMx_14.jpg" border="0" alt=""><br>
+<br>
+<br>
+Obiekt namierzony.<br>
+<span class="style-br">.</span><br>
+<img src="images/Namierzanie_obiektow_teleskopem_za_pomoca_skali_montazu/CWONNZPSMx_15.jpg" border="0" alt=""><br>
+<br>
+<br>
+Klikamy WIDOK W OKULARZE.<br>
+<span class="style-br">.</span><br>
+<img src="images/Namierzanie_obiektow_teleskopem_za_pomoca_skali_montazu/CWONNZPSMx_16.jpg" border="0" alt=""><br>
+<br>
+<br>
+I gotowe, możemy po nastawieniu montażu na dane parametry Ra i Dec obiektu wypatrywać celu...<br>
+<span class="style-br">.</span><br>
+<img src="images/Namierzanie_obiektow_teleskopem_za_pomoca_skali_montazu/CWONNZPSMx_17.jpg" border="0" alt=""><br>
+<br>
+<br>
+...poszukując zawzięcie charakterystycznego układu jasnych gwiazdek :)<br>
+<span
+<span class="style-br">.</span><br>
+<img src="images/Namierzanie_obiektow_teleskopem_za_pomoca_skali_montazu/CWONNZPSMx_17a.jpg" border="0" alt=""><br>
+<br>
+<br>
+Czasem jednak natrafimy na pewien problem i poniżej go zaprezentuję.<br>
+Celujemy w mgławicę planetarną o nazwie NGC 2022.<br>
+<span class="style-br">.</span><br>
+<img src="images/Namierzanie_obiektow_teleskopem_za_pomoca_skali_montazu/CWONNZPSMx_18.jpg" border="0" alt=""><br>
+<br>
+<br>
+Namierzona.<br>
+<span class="style-br">.</span><br>
+<img src="images/Namierzanie_obiektow_teleskopem_za_pomoca_skali_montazu/CWONNZPSMx_19.jpg" border="0" alt=""><br>
+<br>
+<br>
+WIDOK W OKULARZE a tu wielkie zamieszanie :) Nic nie widać, bo dodane do Stellarium obrazki mgławic wszystko zacierają.<br>
+Można oczywiście wyłączyć je na stałe, ale to nie jest konieczne, ponieważ można je łatwo wyłączać doraźnie.<br>
+<span class="style-br">.</span><br>
+<img src="images/Namierzanie_obiektow_teleskopem_za_pomoca_skali_montazu/CWONNZPSMx_20.jpg" border="0" alt=""><br>
+<br>
+<br>
+W tym celu udajemy się do OKNO KONFIGURACJI tam DODATKI i zaznaczamy POKAŻ PRZYCISK TŁA MGŁAWICY.<br>
+<span class="style-br">.</span><br>
+<img src="images/Namierzanie_obiektow_teleskopem_za_pomoca_skali_montazu/CWONNZPSMx_21.jpg" border="0" alt=""><br>
+<br>
+<br>
+Co będzie skutkowało tym, że na dole pojawi nam się przycisk OBRAZY OBIEKTÓW GŁĘBOKIEGO NIEBA, który nam umożliwi ich wyłączanie w razie potrzeby.<br>
+<span class="style-br">.</span><br>
+<img src="images/Namierzanie_obiektow_teleskopem_za_pomoca_skali_montazu/CWONNZPSMx_22.jpg" border="0" alt=""><br>
+<br>
+<br>
+Taki efekt uzyskaliśmy, prawda, że wszystko stało się dużo bardziej czytelne?<br>
+<span class="style-br">.</span><br>
+<img src="images/Namierzanie_obiektow_teleskopem_za_pomoca_skali_montazu/CWONNZPSMx_23.jpg" border="0" alt=""><br>
+<br>
+<br>
+Opisane tu dostrojenie widoku w okularze w Stellarium niebywale ułatwia celowanie, warto poświęcić czas na jego przeprowadzenie, aby potem pod niebem zaoszczędzić tak cenne chwile czystego nieba :)<br>
+<br>
+<a href="#WD" ><span class="style-link">WRÓĆ DO WYKAZU DZIAŁÓW &#10148;</span></a><br>
+<br>
+<hr style="border: 0px; background: #FFCC00; height: 3px;"><a name="5"></a>
+<br>
+<br>
+
+
+
+
+
+<span class="style-dzial">&#10074; OGRANICZENIE WIELKOŚCI GWIAZDOWEJ</span><br>
+<br>
+Aby jeszcze łatwiej dokonywać identyfikacji gwiazd widzianych w okularze względem Stellarium, warto zależnie od posiadanego nieba oraz jasności teleskopu dobrać optymalny parametr OGRANICZENIE WIELKOŚCI GWIAZDOWEJ. Sprawia on, że gwiazdy będą wyświetlane jedynie do pewnej wartości magnitudo. Dlaczego to jest tak ważne? Gdy posiadamy podmiejskie niebo i mały teleskop, gwiazdy na ekranie monitora o wartości 11-12 magnitudo wprowadzają więcej zamieszania niż korzyści. Ustalenie granicy na poziomie 8-10 magnitudo sprawdzi się dużo bardziej, pozwalając nam skupić się na jednoznacznie migocących nam gwiazdkach, a nie tracić czas na szukanie układów, których nie dostrzegamy, bo wyświetlane na monitorze gwiazdy są zbyt słabe, aby stanowić dla nas punkt odniesienia. Dodatkowo, programy tego typu mają tendencję do fałszowania rzeczywistego rozmiaru wyświetlanych słabych gwiazd, co może powodować, że będziemy poszukiwać układów gwiazd niewystępujących na niebie, co spowoduje niepotrzebne problemy z trafieniem w obiekty.<br>
+<br>
+Udajemy się do OKNO USTAWIEŃ WIDOKU I NIEBA...<br>
+<span class="style-br">.</span><br>
+<img src="images/Namierzanie_obiektow_teleskopem_za_pomoca_skali_montazu/CWONNZPSMx_24.jpg" border="0" alt=""><br>
+<br>
+<br>
+...tam zaznaczamy (jeśli nie mamy zaznaczone) OGRANICZENIE WIELKOŚCI GWIAZDOWEJ i wybieramy jakąś wartość.<br>
+<span class="style-br">.</span><br>
+<img src="images/Namierzanie_obiektow_teleskopem_za_pomoca_skali_montazu/CWONNZPSMx_25.jpg" border="0" alt=""><br>
+<br>
+<br>
+Następnie, aby wszystko szło jeszcze sprawniej, ja roboczo okno chowam sobie w lewym dolnym rogu, aby mi nie zasłaniało widoku.<br>
+<span class="style-br">.</span><br>
+<img src="images/Namierzanie_obiektow_teleskopem_za_pomoca_skali_montazu/CWONNZPSMx_26.jpg" border="0" alt=""><br>
+<br>
+<img src="images/Namierzanie_obiektow_teleskopem_za_pomoca_skali_montazu/CWONNZPSMx_27.jpg" border="0" alt=""><br>
+<br>
+Jak widzimy, dostępne jest wszystko, co nam na ten moment jest niezbędne, możemy zmieniać ograniczenie wielkości gwiazdowej i obserwować na bieżąco pojawiające się coraz słabsze obiekty.<br>
+Przy 8 magnitudo widzimy jedynie trzy gwiazdki i nawet jeśli faktycznie w okularze, takie się pojawiły, to warto wywołać słabsze obiekty dla upewnienia się.<br>
+<br>
+<br>
+Przy 9 magnitudo pojawiły się kolejne punkty, możemy teraz je porównać z widokiem w okularze, czy  faktycznie we wskazanych miejscach odnajdujemy gwiazdy.<br>
+<span class="style-br">.</span><br>
+<img src="images/Namierzanie_obiektow_teleskopem_za_pomoca_skali_montazu/CWONNZPSMx_28.jpg" border="0" alt=""><br>
+<br>
+<br>
+Zobaczmy 10 magnitudo.<br>
+<span class="style-br">.</span><br>
+<img src="images/Namierzanie_obiektow_teleskopem_za_pomoca_skali_montazu/CWONNZPSMx_29.jpg" border="0" alt=""><br>
+<br>
+<br>
+I jeśli do pierwotnego trójkąta...<br>
+<span class="style-br">.</span><br>
+<img src="images/Namierzanie_obiektow_teleskopem_za_pomoca_skali_montazu/CWONNZPSMx_30.jpg" border="0" alt=""><br>
+<br>
+<br>
+...dołączył kolejny i układy gwiazd, które widzimy na ekranie, znajdują odzwierciedlenie w tym, co widzimy w okularze, mamy wtedy pewność, że faktycznie jesteśmy we właściwym miejscu :)<br>
+<span class="style-br">.</span><br>
+<img src="images/Namierzanie_obiektow_teleskopem_za_pomoca_skali_montazu/CWONNZPSMx_31.jpg" border="0" alt=""><br>
+<br>
+<br>
+<a href="#WD" ><span class="style-link">WRÓĆ DO WYKAZU DZIAŁÓW &#10148;</span></a><br>
+<br>
+</span>
+
+
+<div align="center">
+<a href="index.html">
+<picture>
+  <source media="(max-width: 1080px)" srcset="images/Astrofotografia-xl.png">
+  <img src="images/Astrofotografia.png" alt="Astrofotografia">
+</picture>
+</a>
+</div>
+
+
+<br>
+
+</td>
+</tr>
+</table>
+
+</td>
+</tr>
+<tr><td width="100%" height="1" bgcolor="#000000"></td></tr>
+<tr><td width="100%" height="2" bgcolor="#FFD135"></td></tr>
+<tr>
+<td width="100%" height="36" align="center" bgcolor="#2D303A">
+<div style="position: absolute;"><a href="https://info.flagcounter.com/kj9N"><img src="https://s05.flagcounter.com/mini/kj9N/bg_737682/txt_51535C/border_737682/flags_0/" alt="Flag Counter" border="0"></a></div>
+<div style="position: absolute;"><img src="images/FCH1.png" alt="" border="0"></div>
+<span class="style-stopka">&copy;Copyright 2021-2022 HAMAL</span><br>
+</td>
+</tr>
+</table>
+
+</body>
+</html>
