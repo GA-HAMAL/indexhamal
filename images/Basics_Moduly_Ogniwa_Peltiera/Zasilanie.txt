@@ -1,0 +1,14 @@
+https://www.electronicsforu.com/electronics-projects/mini-fridge-peltier-cooler
+
+Współczynnik wydajności
+Ważną miarą przy wyborze elementu Peltiera jest współczynnik wydajności (COP). COP definiuje się jako ciepło pochłonięte po stronie zimnej podzielone przez moc wejściową elementu Peltiera. Wynikiem maksymalnego COP jest minimalna moc wejściowa Peltiera. Zatem minimalna ilość całkowitego ciepła musi zostać rozproszona przez radiator. Niższa temperatura radiatora skutkuje niższym dT. Można więc zastosować mniejsze radiatory, co pozwala na oszczędność miejsca. Natomiast optymalizując koszty należy zastosować konstrukcję o niższym współczynniku COP.
+
+DC czy PWM?
+Istnieją dwa tryby zasilania/sterownika lodówek termoelektrycznych, które działają w oparciu o efekt Peltiera: DC i PWM. Chociaż w wielu sytuacjach do sterowania elementami Peltiera używany jest PWM, większość producentów elementów Peltiera sugeruje tryb DC i wyraźnie odradza bezpośrednie sterowanie PWM elementów Peltiera.
+
+Poinformowano, że elementy Peltiera sterowane przez PWM są zawsze mniej wydajne niż aplikacje sterowane przez DC. Kolejnym problemem związanym z trybem PWM są zakłócenia elektromagnetyczne (EMI) w okablowaniu elementu Peltiera.
+
+Niektórzy eksperci zalecają użycie PWM z filtrem LC , aby uzyskać czysty prąd napędowy przy wyższych częstotliwościach, podczas gdy inni wolą stosunkowo prosty tryb DC. W każdym razie, zgodnie z dokumentacją, ważne jest, aby prąd sterujący był stały i płynny, z bardzo niskimi tętnieniami i szumami, aby osiągnąć dobrą stabilność. Tętnienia zmniejszają zdolność chłodzenia elementu Peltiera.
+
+Liniowy czy SMPS ?
+Istnieją dwa popularne rozwiązania generowania prądu stałego wymaganego do sterowania elementami Peltiera – liniowe i SMPS. Ponieważ elementy Peltiera/zasilacze liniowe są zasilane prądem stałym, zasilacze liniowe będą działać optymalnie, ale mają słabą wydajność. Z drugiej strony jednostki SMPS mają wysoką wydajność (> 90%), ponieważ ich konstrukcja elektroniczna prowadzi do mniejszych strat. Z tego powodu nie zaleca się stosowania zasilaczy liniowych do napędzania elementów Peltiera.
